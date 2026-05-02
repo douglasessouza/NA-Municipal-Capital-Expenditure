@@ -23,20 +23,28 @@ INTERNAL_COLUMNS: tuple[str, ...] = (
     "classification_method",
     "data_source",
 )
-PAGE_KEYS: tuple[str, ...] = (
-    "us_tier_select",
-    "us_state_select",
-    "us_population_range",
-    "us_capex_pc_range",
-    "us_map_metric",
-    "us_compare_select",
-    "us_show_all_cols",
-)
-
-
 def _reset_filters() -> None:
-    for key in PAGE_KEYS:
-        st.session_state.pop(key, None)
+    """Explicitly re-assign every filter widget to its default value.
+
+    `session_state.pop` is unreliable for widgets that have a `default=`
+    set — the widget can keep its previous value across the rerun. Setting
+    the key explicitly is the robust pattern.
+    """
+    df_all = load_combined()
+    us = df_all[df_all["country"] == "US"]
+    state_opts = sorted(us["state_province"].dropna().unique().tolist())
+    pop_min = int(us["population"].min())
+    pop_max = int(us["population"].max())
+    cpc_min = float(round(float(us["capex_per_capita"].min()), 2))
+    cpc_max = float(round(float(us["capex_per_capita"].max()), 2))
+
+    st.session_state["us_tier_select"] = list(US_TIERS)
+    st.session_state["us_state_select"] = state_opts
+    st.session_state["us_population_range"] = (pop_min, pop_max)
+    st.session_state["us_capex_pc_range"] = (cpc_min, cpc_max)
+    st.session_state["us_map_metric"] = f"Total capex ({CURRENCY})"
+    st.session_state["us_compare_select"] = []
+    st.session_state["us_show_all_cols"] = False
 
 
 st.set_page_config(layout="wide", page_title="United States — Municipal CapEx")
@@ -51,6 +59,29 @@ st.caption(
 df_all = load_combined()
 df = df_all[df_all["country"] == "US"].copy()
 
+# Compute slider/multiselect bounds and option lists once. These feed both
+# the widgets and the first-render seeding of session_state.
+state_options = sorted(df["state_province"].dropna().unique().tolist())
+pop_min = int(df["population"].min())
+pop_max = int(df["population"].max())
+if pop_min == pop_max:
+    pop_max = pop_min + 1
+cpc_min = float(round(float(df["capex_per_capita"].min()), 2))
+cpc_max = float(round(float(df["capex_per_capita"].max()), 2))
+if cpc_min == cpc_max:
+    cpc_max = cpc_min + 1.0
+
+# Seed session_state on first render. We do this (rather than passing
+# `default=`/`value=`/`index=` to widgets) because the reset callback also
+# writes session_state — Streamlit warns when both paths are used at once.
+st.session_state.setdefault("us_tier_select", list(US_TIERS))
+st.session_state.setdefault("us_state_select", state_options)
+st.session_state.setdefault("us_population_range", (pop_min, pop_max))
+st.session_state.setdefault("us_capex_pc_range", (cpc_min, cpc_max))
+st.session_state.setdefault("us_map_metric", f"Total capex ({CURRENCY})")
+st.session_state.setdefault("us_compare_select", [])
+st.session_state.setdefault("us_show_all_cols", False)
+
 # --- Sidebar filters -------------------------------------------------------
 with st.sidebar:
     st.header("Filters")
@@ -59,40 +90,27 @@ with st.sidebar:
     selected_tiers: list[str] = st.multiselect(
         "Tier",
         options=list(US_TIERS),
-        default=list(US_TIERS),
         key="us_tier_select",
     )
 
-    state_options = sorted(df["state_province"].dropna().unique().tolist())
     selected_states: list[str] = st.multiselect(
         "State",
         options=state_options,
-        default=state_options,
         key="us_state_select",
     )
 
-    pop_min = int(df["population"].min())
-    pop_max = int(df["population"].max())
-    if pop_min == pop_max:
-        pop_max = pop_min + 1
     population_range: tuple[int, int] = st.slider(
         "Population",
         min_value=pop_min,
         max_value=pop_max,
-        value=(pop_min, pop_max),
         step=1000,
         key="us_population_range",
     )
 
-    cpc_min = float(df["capex_per_capita"].min())
-    cpc_max = float(df["capex_per_capita"].max())
-    if cpc_min == cpc_max:
-        cpc_max = cpc_min + 1.0
     capex_pc_range: tuple[float, float] = st.slider(
         f"Capex per capita ({CURRENCY})",
-        min_value=float(round(cpc_min, 2)),
-        max_value=float(round(cpc_max, 2)),
-        value=(float(round(cpc_min, 2)), float(round(cpc_max, 2))),
+        min_value=cpc_min,
+        max_value=cpc_max,
         step=10.0,
         key="us_capex_pc_range",
     )
@@ -167,7 +185,6 @@ st.caption(
 map_metric = st.radio(
     "Bubble size by",
     options=(f"Total capex ({CURRENCY})", f"Capex per capita ({CURRENCY})"),
-    index=0,
     horizontal=True,
     key="us_map_metric",
 )
@@ -465,10 +482,19 @@ filtered_for_compare["_label"] = (
 )
 compare_options = filtered_for_compare["_label"].sort_values().tolist()
 
+# If filters narrowed the cohort, prior comparison picks may no longer be
+# valid options — drop them before rendering the multiselect, otherwise
+# Streamlit raises because session_state holds values not in `options`.
+if "us_compare_select" in st.session_state:
+    st.session_state["us_compare_select"] = [
+        v
+        for v in st.session_state["us_compare_select"]
+        if v in compare_options
+    ]
+
 selected_labels: list[str] = st.multiselect(
     "Municipalities",
     options=compare_options,
-    default=[],
     max_selections=3,
     key="us_compare_select",
 )
@@ -533,7 +559,6 @@ st.caption(f"Showing **{len(filtered):,}** of {len(df):,} US municipalities.")
 
 show_all_cols = st.toggle(
     "Show all columns (including internal fields)",
-    value=False,
     key="us_show_all_cols",
 )
 

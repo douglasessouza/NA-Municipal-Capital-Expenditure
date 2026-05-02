@@ -117,8 +117,17 @@ def attach_coords(df: pd.DataFrame) -> pd.DataFrame:
     Rows whose key is missing from the cache or whose cache value is None
     receive NaN for lat/lon.
     """
-    cache = _load_cache()
     out = df.copy()
+
+    if out.empty:
+        # df.apply(..., result_type="expand") on an empty frame returns an
+        # empty frame with no integer columns, which would KeyError on
+        # `coords[0]`. Skip the lookup and just attach empty Float64 cols.
+        out["lat"] = pd.Series(dtype="Float64")
+        out["lon"] = pd.Series(dtype="Float64")
+        return out
+
+    cache = _load_cache()
 
     def _lookup(row: pd.Series) -> tuple[float | None, float | None]:
         key = _cache_key(row["country"], row["state_province"], row["municipality"])

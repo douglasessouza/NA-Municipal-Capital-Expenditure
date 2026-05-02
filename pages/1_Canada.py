@@ -24,21 +24,30 @@ INTERNAL_COLUMNS: tuple[str, ...] = (
     "classification_method",
     "data_source",
 )
-PAGE_KEYS: tuple[str, ...] = (
-    "ca_tier_select",
-    "ca_province_select",
-    "ca_fy_select",
-    "ca_population_range",
-    "ca_capex_pc_range",
-    "ca_map_metric",
-    "ca_compare_select",
-    "ca_show_all_cols",
-)
-
-
 def _reset_filters() -> None:
-    for key in PAGE_KEYS:
-        st.session_state.pop(key, None)
+    """Explicitly re-assign every filter widget to its default value.
+
+    `session_state.pop` is unreliable for widgets that have a `default=`
+    set — the widget can keep its previous value across the rerun. Setting
+    the key explicitly is the robust pattern.
+    """
+    df_all = load_combined()
+    ca = df_all[df_all["country"] == "Canada"]
+    province_opts = sorted(ca["state_province"].dropna().unique().tolist())
+    fy_opts = sorted(int(v) for v in ca["fiscal_year"].dropna().unique())
+    pop_min = int(ca["population"].min())
+    pop_max = int(ca["population"].max())
+    cpc_min = float(round(float(ca["capex_per_capita"].min()), 2))
+    cpc_max = float(round(float(ca["capex_per_capita"].max()), 2))
+
+    st.session_state["ca_tier_select"] = list(CANADA_TIERS)
+    st.session_state["ca_province_select"] = province_opts
+    st.session_state["ca_fy_select"] = fy_opts
+    st.session_state["ca_population_range"] = (pop_min, pop_max)
+    st.session_state["ca_capex_pc_range"] = (cpc_min, cpc_max)
+    st.session_state["ca_map_metric"] = f"Total capex ({CURRENCY})"
+    st.session_state["ca_compare_select"] = []
+    st.session_state["ca_show_all_cols"] = False
 
 
 st.set_page_config(layout="wide", page_title="Canada — Municipal CapEx")
@@ -52,6 +61,31 @@ st.caption(
 df_all = load_combined()
 df = df_all[df_all["country"] == "Canada"].copy()
 
+# Compute slider/multiselect bounds and option lists once. These feed both
+# the widgets and the first-render seeding of session_state.
+province_options = sorted(df["state_province"].dropna().unique().tolist())
+fy_options = sorted(int(v) for v in df["fiscal_year"].dropna().unique())
+pop_min = int(df["population"].min())
+pop_max = int(df["population"].max())
+if pop_min == pop_max:
+    pop_max = pop_min + 1
+cpc_min = float(round(float(df["capex_per_capita"].min()), 2))
+cpc_max = float(round(float(df["capex_per_capita"].max()), 2))
+if cpc_min == cpc_max:
+    cpc_max = cpc_min + 1.0
+
+# Seed session_state on first render. We do this (rather than passing
+# `default=`/`value=`/`index=` to widgets) because the reset callback also
+# writes session_state — Streamlit warns when both paths are used at once.
+st.session_state.setdefault("ca_tier_select", list(CANADA_TIERS))
+st.session_state.setdefault("ca_province_select", province_options)
+st.session_state.setdefault("ca_fy_select", fy_options)
+st.session_state.setdefault("ca_population_range", (pop_min, pop_max))
+st.session_state.setdefault("ca_capex_pc_range", (cpc_min, cpc_max))
+st.session_state.setdefault("ca_map_metric", f"Total capex ({CURRENCY})")
+st.session_state.setdefault("ca_compare_select", [])
+st.session_state.setdefault("ca_show_all_cols", False)
+
 # --- Sidebar filters -------------------------------------------------------
 with st.sidebar:
     st.header("Filters")
@@ -60,48 +94,33 @@ with st.sidebar:
     selected_tiers: list[str] = st.multiselect(
         "Tier",
         options=list(CANADA_TIERS),
-        default=list(CANADA_TIERS),
         key="ca_tier_select",
     )
 
-    province_options = sorted(df["state_province"].dropna().unique().tolist())
     selected_provinces: list[str] = st.multiselect(
         "Province",
         options=province_options,
-        default=province_options,
         key="ca_province_select",
     )
 
-    fy_options = sorted(int(v) for v in df["fiscal_year"].dropna().unique())
     selected_fys: list[int] = st.multiselect(
         "Fiscal year",
         options=fy_options,
-        default=fy_options,
         key="ca_fy_select",
     )
 
-    pop_min = int(df["population"].min())
-    pop_max = int(df["population"].max())
-    if pop_min == pop_max:
-        pop_max = pop_min + 1
     population_range: tuple[int, int] = st.slider(
         "Population",
         min_value=pop_min,
         max_value=pop_max,
-        value=(pop_min, pop_max),
         step=1000,
         key="ca_population_range",
     )
 
-    cpc_min = float(df["capex_per_capita"].min())
-    cpc_max = float(df["capex_per_capita"].max())
-    if cpc_min == cpc_max:
-        cpc_max = cpc_min + 1.0
     capex_pc_range: tuple[float, float] = st.slider(
         f"Capex per capita ({CURRENCY})",
-        min_value=float(round(cpc_min, 2)),
-        max_value=float(round(cpc_max, 2)),
-        value=(float(round(cpc_min, 2)), float(round(cpc_max, 2))),
+        min_value=cpc_min,
+        max_value=cpc_max,
         step=10.0,
         key="ca_capex_pc_range",
     )
@@ -183,7 +202,6 @@ st.caption(
 map_metric = st.radio(
     "Bubble size by",
     options=(f"Total capex ({CURRENCY})", f"Capex per capita ({CURRENCY})"),
-    index=0,
     horizontal=True,
     key="ca_map_metric",
 )
@@ -576,10 +594,19 @@ filtered_for_compare["_label"] = (
 )
 compare_options = filtered_for_compare["_label"].sort_values().tolist()
 
+# If filters narrowed the cohort, prior comparison picks may no longer be
+# valid options — drop them before rendering the multiselect, otherwise
+# Streamlit raises because session_state holds values not in `options`.
+if "ca_compare_select" in st.session_state:
+    st.session_state["ca_compare_select"] = [
+        v
+        for v in st.session_state["ca_compare_select"]
+        if v in compare_options
+    ]
+
 selected_labels: list[str] = st.multiselect(
     "Municipalities",
     options=compare_options,
-    default=[],
     max_selections=3,
     key="ca_compare_select",
 )
@@ -666,7 +693,6 @@ st.caption(f"Showing **{len(filtered):,}** of {len(df):,} Canadian municipalitie
 
 show_all_cols = st.toggle(
     "Show all columns (including internal fields)",
-    value=False,
     key="ca_show_all_cols",
 )
 
