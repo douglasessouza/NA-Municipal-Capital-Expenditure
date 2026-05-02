@@ -1,0 +1,2407 @@
+{
+  "Canada|Alberta|Lethbridge": {
+    "display": "Lethbridge, Alberta, Canada",
+    "lat": 49.6945782,
+    "lon": -112.8331033
+  },
+  "Canada|Alberta|Red Deer": {
+    "display": "City of Red Deer, Alberta, Canada",
+    "lat": 52.2690628,
+    "lon": -113.8141464
+  },
+  "Canada|Alberta|Strathcona County": {
+    "display": "Strathcona County, Alberta, Canada",
+    "lat": 53.5762678,
+    "lon": -113.1255397
+  },
+  "Canada|British Columbia|Abbotsford": {
+    "display": "Abbotsford, Fraser Valley Regional District, British Columbia, Canada",
+    "lat": 49.0521162,
+    "lon": -122.329479
+  },
+  "Canada|British Columbia|Burnaby": {
+    "display": "Burnaby, Metro Vancouver Regional District, British Columbia, Canada",
+    "lat": 49.2433804,
+    "lon": -122.972545
+  },
+  "Canada|British Columbia|Chilliwack": {
+    "display": "Chilliwack, Fraser Valley Regional District, British Columbia, Canada",
+    "lat": 49.1709788,
+    "lon": -121.95255
+  },
+  "Canada|British Columbia|Coquitlam": {
+    "display": "Coquitlam, Metro Vancouver Regional District, British Columbia, Canada",
+    "lat": 49.2842958,
+    "lon": -122.793281
+  },
+  "Canada|British Columbia|Delta": {
+    "display": "Delta, Metro Vancouver Regional District, British Columbia, Canada",
+    "lat": 49.0846258,
+    "lon": -123.057938
+  },
+  "Canada|British Columbia|Kamloops": {
+    "display": "Kamloops, Thompson-Nicola Regional District, British Columbia, Canada",
+    "lat": 50.6758269,
+    "lon": -120.339415
+  },
+  "Canada|British Columbia|Kelowna": {
+    "display": "Kelowna, Westbank First Nation #9, Regional District of Central Okanagan, British Columbia, Canada",
+    "lat": 49.8879177,
+    "lon": -119.495902
+  },
+  "Canada|British Columbia|Langley": {
+    "display": "City of Langley, Metro Vancouver Regional District, British Columbia, Canada",
+    "lat": 49.1039289,
+    "lon": -122.657047
+  },
+  "Canada|British Columbia|Maple Ridge": {
+    "display": "Maple Ridge, Metro Vancouver Regional District, British Columbia, Canada",
+    "lat": 49.2197345,
+    "lon": -122.599707
+  },
+  "Canada|British Columbia|Nanaimo": {
+    "display": "Nanaimo, Regional District of Nanaimo, British Columbia, Canada",
+    "lat": 49.163877,
+    "lon": -123.938122
+  },
+  "Canada|British Columbia|New Westminster": {
+    "display": "New Westminster, Metro Vancouver Regional District, British Columbia, Canada",
+    "lat": 49.2067726,
+    "lon": -122.9108818
+  },
+  "Canada|British Columbia|North Vancouver": {
+    "display": "North Vancouver, Metro Vancouver Regional District, British Columbia, Canada",
+    "lat": 49.3206294,
+    "lon": -123.0737925
+  },
+  "Canada|British Columbia|Prince George": {
+    "display": "Prince George, Regional District of Fraser-Fort George, British Columbia, Canada",
+    "lat": 53.9128645,
+    "lon": -122.7453699
+  },
+  "Canada|British Columbia|Richmond": {
+    "display": "Richmond, Metro Vancouver Regional District, British Columbia, Canada",
+    "lat": 49.163168,
+    "lon": -123.137414
+  },
+  "Canada|British Columbia|Saanich": {
+    "display": "Saanich, Capital Regional District, British Columbia, Canada",
+    "lat": 48.4594315,
+    "lon": -123.376494
+  },
+  "Canada|British Columbia|Victoria": {
+    "display": "Victoria, Capital Regional District, British Columbia, Canada",
+    "lat": 48.4283182,
+    "lon": -123.364953
+  },
+  "Canada|New Brunswick|Moncton": {
+    "display": "City of Moncton, Westmorland County, New Brunswick / Nouveau-Brunswick, Canada",
+    "lat": 46.0985679,
+    "lon": -64.8004265
+  },
+  "Canada|Newfoundland and Labrador|St. John's": {
+    "display": "St. John's, Newfoundland, Newfoundland and Labrador, Canada",
+    "lat": 47.5646794,
+    "lon": -52.7066964
+  },
+  "Canada|Nova Scotia|Cape Breton": {
+    "display": "Cape Breton Island, Nova Scotia, Canada",
+    "lat": 46.2950327,
+    "lon": -60.9360554
+  },
+  "Canada|Ontario|Ajax": {
+    "display": "Ajax, Durham Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.8505287,
+    "lon": -79.0208814
+  },
+  "Canada|Ontario|Barrie": {
+    "display": "Barrie, Central Ontario, Ontario, Canada",
+    "lat": 44.3893208,
+    "lon": -79.6901302
+  },
+  "Canada|Ontario|Brantford": {
+    "display": "Brantford, Southwestern Ontario, Ontario, Canada",
+    "lat": 43.1408157,
+    "lon": -80.2631733
+  },
+  "Canada|Ontario|Burlington": {
+    "display": "Burlington, Halton Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.3248924,
+    "lon": -79.7966835
+  },
+  "Canada|Ontario|Caledon": {
+    "display": "Caledon, Peel Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.8320699,
+    "lon": -79.9066871
+  },
+  "Canada|Ontario|Cambridge": {
+    "display": "Cambridge, Region of Waterloo, Southwestern Ontario, Ontario, Canada",
+    "lat": 43.3600536,
+    "lon": -80.3123023
+  },
+  "Canada|Ontario|Chatham-Kent": {
+    "display": "Chatham-Kent, Southwestern Ontario, Ontario, Canada",
+    "lat": 42.41833,
+    "lon": -82.0898417
+  },
+  "Canada|Ontario|Clarington": {
+    "display": "Clarington, Durham Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.9686695,
+    "lon": -78.6513545
+  },
+  "Canada|Ontario|Greater Sudbury / Grand Sudbury": {
+    "display": "Greater Sudbury, Ontario, Canada (manual override)",
+    "lat": 46.4917,
+    "lon": -80.993
+  },
+  "Canada|Ontario|Guelph": {
+    "display": "Guelph, Southwestern Ontario, Ontario, Canada",
+    "lat": 43.5460516,
+    "lon": -80.2493276
+  },
+  "Canada|Ontario|Kawartha Lakes": {
+    "display": "Kawartha Lakes, Central Ontario, Ontario, Canada",
+    "lat": 44.3596825,
+    "lon": -78.7421729
+  },
+  "Canada|Ontario|Kingston": {
+    "display": "Kingston, Eastern Ontario, Ontario, Canada",
+    "lat": 44.3054151,
+    "lon": -76.4283781
+  },
+  "Canada|Ontario|Kitchener": {
+    "display": "Kitchener, Region of Waterloo, Southwestern Ontario, Ontario, Canada",
+    "lat": 43.451291,
+    "lon": -80.4927815
+  },
+  "Canada|Ontario|Milton": {
+    "display": "Milton, Halton Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.513671,
+    "lon": -79.882817
+  },
+  "Canada|Ontario|Newmarket": {
+    "display": "Newmarket, York Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 44.056258,
+    "lon": -79.461708
+  },
+  "Canada|Ontario|Niagara Falls": {
+    "display": "Niagara Falls, Niagara Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.1065603,
+    "lon": -79.0639039
+  },
+  "Canada|Ontario|Oakville": {
+    "display": "Oakville, Halton Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.447436,
+    "lon": -79.666672
+  },
+  "Canada|Ontario|Oshawa": {
+    "display": "Oshawa, Durham Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.8975558,
+    "lon": -78.8635324
+  },
+  "Canada|Ontario|Peterborough": {
+    "display": "Peterborough, Central Ontario, Ontario, Canada",
+    "lat": 44.3048009,
+    "lon": -78.3199496
+  },
+  "Canada|Ontario|Pickering": {
+    "display": "Pickering, Durham Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.835765,
+    "lon": -79.090576
+  },
+  "Canada|Ontario|Richmond Hill": {
+    "display": "Richmond Hill, York Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.8801166,
+    "lon": -79.4392925
+  },
+  "Canada|Ontario|St. Catharines": {
+    "display": "St. Catharines, Niagara Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.1579812,
+    "lon": -79.2441003
+  },
+  "Canada|Ontario|Thunder Bay": {
+    "display": "Thunder Bay, Thunder Bay District, Northwestern Ontario, Ontario, Canada",
+    "lat": 48.406414,
+    "lon": -89.259796
+  },
+  "Canada|Ontario|Waterloo": {
+    "display": "Waterloo, Region of Waterloo, Southwestern Ontario, Ontario, Canada",
+    "lat": 43.4652699,
+    "lon": -80.5222961
+  },
+  "Canada|Ontario|Whitby": {
+    "display": "Whitby, Durham Region, Golden Horseshoe, Ontario, Canada",
+    "lat": 43.87982,
+    "lon": -78.9421751
+  },
+  "Canada|Ontario|Windsor": {
+    "display": "Windsor, Southwestern Ontario, Ontario, Canada",
+    "lat": 42.2858536,
+    "lon": -82.9780695
+  },
+  "Canada|Quebec|Brossard": {
+    "display": "Brossard, Agglomération de Longueuil, Montérégie, Québec, Canada",
+    "lat": 45.4554579,
+    "lon": -73.4678695
+  },
+  "Canada|Quebec|Drummondville": {
+    "display": "Drummondville, Drummond, Centre-du-Québec, Québec, Canada",
+    "lat": 45.8864303,
+    "lon": -72.5018764
+  },
+  "Canada|Quebec|Gatineau": {
+    "display": "Gatineau, Outaouais, Québec, Canada",
+    "lat": 45.4277659,
+    "lon": -75.710976
+  },
+  "Canada|Quebec|Longueuil": {
+    "display": "Longueuil, Agglomération de Longueuil, Montérégie, Québec, Canada",
+    "lat": 45.521906,
+    "lon": -73.4644578
+  },
+  "Canada|Quebec|Lévis": {
+    "display": "Lévis, Chaudière-Appalaches, Québec, Canada",
+    "lat": 46.8033114,
+    "lon": -71.1778792
+  },
+  "Canada|Quebec|Repentigny": {
+    "display": "Repentigny, L'Assomption (MRC), Lanaudière, Québec, Canada",
+    "lat": 45.7326055,
+    "lon": -73.4528307
+  },
+  "Canada|Quebec|Saguenay": {
+    "display": "Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada",
+    "lat": 48.405959,
+    "lon": -71.069183
+  },
+  "Canada|Quebec|Saint-Jean-sur-Richelieu": {
+    "display": "Saint-Jean-sur-Richelieu, Le Haut-Richelieu, Montérégie, Québec, Canada",
+    "lat": 45.3056879,
+    "lon": -73.2533401
+  },
+  "Canada|Quebec|Saint-Jérôme": {
+    "display": "Saint-Jérôme, La Rivière-du-Nord, Laurentides, Québec, Canada",
+    "lat": 45.7780402,
+    "lon": -74.0033272
+  },
+  "Canada|Quebec|Sherbrooke": {
+    "display": "Sherbrooke, Estrie, Québec, Canada",
+    "lat": 45.403271,
+    "lon": -71.889038
+  },
+  "Canada|Quebec|Terrebonne": {
+    "display": "Terrebonne, Les Moulins, Lanaudière, Québec, Canada",
+    "lat": 45.6951527,
+    "lon": -73.6350148
+  },
+  "Canada|Quebec|Trois-Rivières": {
+    "display": "Trois-Rivières, Mauricie, Québec, Canada",
+    "lat": 46.3432325,
+    "lon": -72.5428485
+  },
+  "Canada|Saskatchewan|Regina": {
+    "display": "Regina, Saskatchewan, Canada",
+    "lat": 50.4479733,
+    "lon": -104.6158764
+  },
+  "Canada|Saskatchewan|Saskatoon": {
+    "display": "Saskatoon, Saskatchewan, Canada",
+    "lat": 52.131802,
+    "lon": -106.660767
+  },
+  "US|Alabama|Auburn": {
+    "display": "Auburn, Lee County, Alabama, United States",
+    "lat": 32.6098566,
+    "lon": -85.4807825
+  },
+  "US|Alabama|Birmingham": {
+    "display": "Birmingham, Jefferson County, Alabama, United States",
+    "lat": 33.5206824,
+    "lon": -86.8024326
+  },
+  "US|Alabama|Hoover": {
+    "display": "Hoover, Jefferson County, Alabama, United States",
+    "lat": 33.350293,
+    "lon": -86.851123
+  },
+  "US|Alabama|Huntsville": {
+    "display": "Huntsville, Madison County, Alabama, United States",
+    "lat": 34.729847,
+    "lon": -86.5859011
+  },
+  "US|Alabama|Mobile": {
+    "display": "Mobile, Mobile County, Alabama, United States",
+    "lat": 30.6913462,
+    "lon": -88.0437509
+  },
+  "US|Alabama|Montgomery": {
+    "display": "Montgomery, Montgomery County, Alabama, United States",
+    "lat": 32.3777111,
+    "lon": -86.3090775
+  },
+  "US|Alabama|Tuscaloosa": {
+    "display": "Tuscaloosa, Tuscaloosa County, Alabama, United States",
+    "lat": 33.2095614,
+    "lon": -87.5675258
+  },
+  "US|Alaska|Anchorage": {
+    "display": "Anchorage, Alaska, United States",
+    "lat": 61.2163129,
+    "lon": -149.894852
+  },
+  "US|Arizona|Avondale": {
+    "display": "Avondale, Maricopa County, Arizona, United States",
+    "lat": 33.4355977,
+    "lon": -112.349602
+  },
+  "US|Arizona|Buckeye": {
+    "display": "Buckeye, Maricopa County, Arizona, United States",
+    "lat": 33.3703197,
+    "lon": -112.583776
+  },
+  "US|Arizona|Chandler": {
+    "display": "Chandler, Maricopa County, Arizona, United States",
+    "lat": 33.3062031,
+    "lon": -111.841185
+  },
+  "US|Arizona|Flagstaff": {
+    "display": "Flagstaff, Coconino County, Arizona, United States",
+    "lat": 35.1987522,
+    "lon": -111.651822
+  },
+  "US|Arizona|Gilbert": {
+    "display": "Gilbert, Maricopa County, Arizona, United States",
+    "lat": 33.3527632,
+    "lon": -111.789037
+  },
+  "US|Arizona|Glendale": {
+    "display": "Glendale, Maricopa County, Arizona, United States",
+    "lat": 33.5386858,
+    "lon": -112.185994
+  },
+  "US|Arizona|Goodyear": {
+    "display": "Goodyear, Maricopa County, Arizona, United States",
+    "lat": 33.4672279,
+    "lon": -112.3853489
+  },
+  "US|Arizona|Maricopa": {
+    "display": "Maricopa County, Arizona, United States",
+    "lat": 33.34883,
+    "lon": -112.49123
+  },
+  "US|Arizona|Peoria": {
+    "display": "Peoria, Maricopa County, Arizona, United States",
+    "lat": 33.5806115,
+    "lon": -112.237294
+  },
+  "US|Arizona|Queen Creek": {
+    "display": "Queen Creek, Maricopa County, Arizona, United States",
+    "lat": 33.2483858,
+    "lon": -111.634158
+  },
+  "US|Arizona|Scottsdale": {
+    "display": "Scottsdale, Maricopa County, Arizona, United States",
+    "lat": 33.4942189,
+    "lon": -111.926018
+  },
+  "US|Arizona|Surprise": {
+    "display": "Surprise, Maricopa County, Arizona, United States",
+    "lat": 33.629247,
+    "lon": -112.3681428
+  },
+  "US|Arizona|Tempe": {
+    "display": "Tempe, Maricopa County, Arizona, United States",
+    "lat": 33.4255117,
+    "lon": -111.940016
+  },
+  "US|Arizona|Yuma": {
+    "display": "Yuma, Yuma County, Arizona, United States",
+    "lat": 32.7254216,
+    "lon": -114.6198088
+  },
+  "US|Arkansas|Fayetteville": {
+    "display": "Fayetteville, Washington County, Arkansas, United States",
+    "lat": 36.0625843,
+    "lon": -94.1574328
+  },
+  "US|Arkansas|Fort Smith": {
+    "display": "Fort Smith, Sebastian County, Arkansas, United States",
+    "lat": 35.3880338,
+    "lon": -94.4265011
+  },
+  "US|Arkansas|Jonesboro": {
+    "display": "Jonesboro, Craighead County, Arkansas, United States",
+    "lat": 35.8348088,
+    "lon": -90.7045297
+  },
+  "US|Arkansas|Little Rock": {
+    "display": "Little Rock, Big Rock Township, Pulaski County, Arkansas, United States",
+    "lat": 34.7465071,
+    "lon": -92.2896267
+  },
+  "US|Arkansas|Rogers": {
+    "display": "Rogers, Benton County, Arkansas, United States",
+    "lat": 36.334857,
+    "lon": -94.1193816
+  },
+  "US|Arkansas|Springdale": {
+    "display": "Springdale, Washington County, Arkansas, United States",
+    "lat": 36.1867442,
+    "lon": -94.1288142
+  },
+  "US|California|Alameda": {
+    "display": "Alameda County, California, United States",
+    "lat": 37.6090291,
+    "lon": -121.899142
+  },
+  "US|California|Alhambra": {
+    "display": "Alhambra, Los Angeles County, California, United States",
+    "lat": 34.093042,
+    "lon": -118.12706
+  },
+  "US|California|Antioch": {
+    "display": "Antioch, Contra Costa County, California, United States",
+    "lat": 38.0093296,
+    "lon": -121.8106925
+  },
+  "US|California|Apple Valley": {
+    "display": "Apple Valley, San Bernardino County, California, United States",
+    "lat": 34.5008311,
+    "lon": -117.1858759
+  },
+  "US|California|Bellflower": {
+    "display": "Bellflower, Los Angeles County, California, 90706, United States",
+    "lat": 33.8825705,
+    "lon": -118.1167679
+  },
+  "US|California|Berkeley": {
+    "display": "Berkeley, Alameda County, California, United States",
+    "lat": 37.8708393,
+    "lon": -122.272863
+  },
+  "US|California|Buena Park": {
+    "display": "Buena Park, Orange County, California, United States",
+    "lat": 33.870413,
+    "lon": -117.9962165
+  },
+  "US|California|Burbank": {
+    "display": "Burbank, Los Angeles County, California, United States",
+    "lat": 34.1812089,
+    "lon": -118.307201
+  },
+  "US|California|Carlsbad": {
+    "display": "Carlsbad, San Diego County, California, United States",
+    "lat": 33.1580933,
+    "lon": -117.3505966
+  },
+  "US|California|Carson": {
+    "display": "Carson, Los Angeles County, California, United States",
+    "lat": 33.8322043,
+    "lon": -118.2517547
+  },
+  "US|California|Chico": {
+    "display": "Chico, Butte County, California, United States",
+    "lat": 39.7284945,
+    "lon": -121.8374777
+  },
+  "US|California|Chino": {
+    "display": "Chino, San Bernardino County, California, United States",
+    "lat": 34.0133561,
+    "lon": -117.690075
+  },
+  "US|California|Chino Hills": {
+    "display": "Chino Hills, San Bernardino County, California, United States",
+    "lat": 33.9926803,
+    "lon": -117.760056
+  },
+  "US|California|Chula Vista": {
+    "display": "Chula Vista, San Diego County, California, United States",
+    "lat": 32.6400541,
+    "lon": -117.084195
+  },
+  "US|California|Citrus Heights": {
+    "display": "Citrus Heights, Sacramento County, California, United States",
+    "lat": 38.7071247,
+    "lon": -121.2810611
+  },
+  "US|California|Clovis": {
+    "display": "Clovis, Fresno County, California, United States",
+    "lat": 36.8252277,
+    "lon": -119.7029194
+  },
+  "US|California|Compton": {
+    "display": "Compton, Los Angeles County, California, United States",
+    "lat": 33.894927,
+    "lon": -118.226624
+  },
+  "US|California|Concord": {
+    "display": "Concord, Contra Costa County, California, United States",
+    "lat": 37.9768525,
+    "lon": -122.0335624
+  },
+  "US|California|Corona": {
+    "display": "Corona, Riverside County, California, United States",
+    "lat": 33.8752945,
+    "lon": -117.566444
+  },
+  "US|California|Daly City": {
+    "display": "Daly City, San Mateo County, California, 94015, United States",
+    "lat": 37.6904826,
+    "lon": -122.47267
+  },
+  "US|California|Downey": {
+    "display": "Downey, Los Angeles County, California, United States",
+    "lat": 33.9404441,
+    "lon": -118.1292846
+  },
+  "US|California|El Cajon": {
+    "display": "El Cajon, San Diego County, California, United States",
+    "lat": 32.7947731,
+    "lon": -116.962526
+  },
+  "US|California|El Monte": {
+    "display": "El Monte, Los Angeles County, California, United States",
+    "lat": 34.0751571,
+    "lon": -118.036849
+  },
+  "US|California|Elk Grove": {
+    "display": "Elk Grove, Sacramento County, California, United States",
+    "lat": 38.4087993,
+    "lon": -121.3716178
+  },
+  "US|California|Escondido": {
+    "display": "Escondido, San Diego County, California, United States",
+    "lat": 33.1216751,
+    "lon": -117.0814849
+  },
+  "US|California|Fairfield": {
+    "display": "Fairfield, Solano County, California, United States",
+    "lat": 38.2493581,
+    "lon": -122.039966
+  },
+  "US|California|Folsom": {
+    "display": "Folsom, Sacramento County, California, United States",
+    "lat": 38.6779591,
+    "lon": -121.176058
+  },
+  "US|California|Fontana": {
+    "display": "Fontana, San Bernardino County, California, United States",
+    "lat": 34.0922947,
+    "lon": -117.43433
+  },
+  "US|California|Fremont": {
+    "display": "Fremont, Alameda County, California, United States",
+    "lat": 37.5482697,
+    "lon": -121.988571
+  },
+  "US|California|Fullerton": {
+    "display": "Fullerton, Orange County, California, United States",
+    "lat": 33.8708215,
+    "lon": -117.929416
+  },
+  "US|California|Garden Grove": {
+    "display": "Garden Grove, Orange County, California, United States",
+    "lat": 33.7746292,
+    "lon": -117.9463717
+  },
+  "US|California|Glendale": {
+    "display": "Glendale, Los Angeles County, California, United States",
+    "lat": 34.1469416,
+    "lon": -118.2478471
+  },
+  "US|California|Hawthorne": {
+    "display": "Hawthorne, Los Angeles County, California, 90250, United States",
+    "lat": 33.9128272,
+    "lon": -118.3426122
+  },
+  "US|California|Hayward": {
+    "display": "Hayward, Alameda County, California, United States",
+    "lat": 37.6688205,
+    "lon": -122.080796
+  },
+  "US|California|Hemet": {
+    "display": "Hemet, Riverside County, California, United States",
+    "lat": 33.7475203,
+    "lon": -116.9719684
+  },
+  "US|California|Hesperia": {
+    "display": "Hesperia, San Bernardino County, California, United States",
+    "lat": 34.4220358,
+    "lon": -117.3046869
+  },
+  "US|California|Huntington Beach": {
+    "display": "Huntington Beach, Orange County, California, United States",
+    "lat": 33.6783336,
+    "lon": -118.000016
+  },
+  "US|California|Indio": {
+    "display": "Indio, Riverside County, California, United States",
+    "lat": 33.7192808,
+    "lon": -116.2188054
+  },
+  "US|California|Inglewood": {
+    "display": "Inglewood, Los Angeles County, California, United States",
+    "lat": 33.9562003,
+    "lon": -118.353132
+  },
+  "US|California|Jurupa Valley": {
+    "display": "Jurupa Valley, Riverside County, California, United States",
+    "lat": 33.9798472,
+    "lon": -117.4515754
+  },
+  "US|California|Lake Forest": {
+    "display": "Lake Forest, Orange County, California, United States",
+    "lat": 33.6469261,
+    "lon": -117.6859213
+  },
+  "US|California|Lakewood": {
+    "display": "Lakewood, Los Angeles County, California, United States",
+    "lat": 33.8503463,
+    "lon": -118.117191
+  },
+  "US|California|Lancaster": {
+    "display": "Lancaster, Los Angeles County, California, United States",
+    "lat": 34.6981064,
+    "lon": -118.1366153
+  },
+  "US|California|Livermore": {
+    "display": "Livermore, Alameda County, California, United States",
+    "lat": 37.6820583,
+    "lon": -121.768053
+  },
+  "US|California|Manteca": {
+    "display": "Manteca, San Joaquin County, California, United States",
+    "lat": 37.7986184,
+    "lon": -121.2117148
+  },
+  "US|California|Menifee": {
+    "display": "Menifee, Riverside County, California, United States",
+    "lat": 33.6863987,
+    "lon": -117.1778599
+  },
+  "US|California|Merced": {
+    "display": "Merced County, California, United States",
+    "lat": 37.1641544,
+    "lon": -120.7678602
+  },
+  "US|California|Milpitas": {
+    "display": "Milpitas, Santa Clara County, California, 95035, United States",
+    "lat": 37.4332273,
+    "lon": -121.8989248
+  },
+  "US|California|Mission Viejo": {
+    "display": "Mission Viejo, Orange County, California, United States",
+    "lat": 33.5965685,
+    "lon": -117.659405
+  },
+  "US|California|Modesto": {
+    "display": "Modesto, Stanislaus County, California, United States",
+    "lat": 37.6393419,
+    "lon": -120.9968892
+  },
+  "US|California|Moreno Valley": {
+    "display": "Moreno Valley, Riverside County, California, United States",
+    "lat": 33.9375177,
+    "lon": -117.2305791
+  },
+  "US|California|Mountain View": {
+    "display": "Mountain View, Santa Clara County, California, United States",
+    "lat": 37.3893889,
+    "lon": -122.0832101
+  },
+  "US|California|Murrieta": {
+    "display": "Murrieta, Riverside County, California, United States",
+    "lat": 33.560832,
+    "lon": -117.210656
+  },
+  "US|California|Napa": {
+    "display": "Napa County, California, United States",
+    "lat": 38.4898675,
+    "lon": -122.3218414
+  },
+  "US|California|Newport Beach": {
+    "display": "Newport Beach, Orange County, California, United States",
+    "lat": 33.6170092,
+    "lon": -117.9294401
+  },
+  "US|California|Norwalk": {
+    "display": "Norwalk, Los Angeles County, California, United States",
+    "lat": 33.9092802,
+    "lon": -118.0849169
+  },
+  "US|California|Oceanside": {
+    "display": "Oceanside, San Diego County, California, United States",
+    "lat": 33.1958696,
+    "lon": -117.379483
+  },
+  "US|California|Ontario": {
+    "display": "Ontario, San Bernardino County, California, United States",
+    "lat": 34.065846,
+    "lon": -117.64843
+  },
+  "US|California|Orange": {
+    "display": "Orange County, California, United States",
+    "lat": 33.750631,
+    "lon": -117.8722311
+  },
+  "US|California|Oxnard": {
+    "display": "Oxnard, Ventura County, California, United States",
+    "lat": 34.1976308,
+    "lon": -119.180381
+  },
+  "US|California|Palmdale": {
+    "display": "Palmdale, Los Angeles County, California, United States",
+    "lat": 34.5793131,
+    "lon": -118.11711
+  },
+  "US|California|Pasadena": {
+    "display": "Pasadena, Los Angeles County, California, United States",
+    "lat": 34.1476507,
+    "lon": -118.144155
+  },
+  "US|California|Perris": {
+    "display": "Perris, Riverside County, California, 92571, United States",
+    "lat": 33.7818729,
+    "lon": -117.2298477
+  },
+  "US|California|Pittsburg": {
+    "display": "Pittsburg, Contra Costa County, California, 94565, United States",
+    "lat": 38.0267711,
+    "lon": -121.8853861
+  },
+  "US|California|Pleasanton": {
+    "display": "Pleasanton, Alameda County, California, United States",
+    "lat": 37.6624312,
+    "lon": -121.8746789
+  },
+  "US|California|Pomona": {
+    "display": "Pomona, Los Angeles County, California, United States",
+    "lat": 34.0553813,
+    "lon": -117.7517496
+  },
+  "US|California|Rancho Cordova": {
+    "display": "Rancho Cordova, Sacramento County, California, United States",
+    "lat": 38.5890723,
+    "lon": -121.302728
+  },
+  "US|California|Rancho Cucamonga": {
+    "display": "Rancho Cucamonga, San Bernardino County, California, United States",
+    "lat": 34.1033192,
+    "lon": -117.575173
+  },
+  "US|California|Redding": {
+    "display": "Redding, Shasta County, California, United States",
+    "lat": 40.5863563,
+    "lon": -122.391675
+  },
+  "US|California|Rialto": {
+    "display": "Rialto, San Bernardino County, California, United States",
+    "lat": 34.1064001,
+    "lon": -117.3703235
+  },
+  "US|California|Richmond": {
+    "display": "Richmond, Contra Costa County, California, United States",
+    "lat": 37.9357576,
+    "lon": -122.347748
+  },
+  "US|California|Rocklin": {
+    "display": "Rocklin, Placer County, California, United States",
+    "lat": 38.7907339,
+    "lon": -121.2357828
+  },
+  "US|California|Roseville": {
+    "display": "Roseville, Placer County, California, United States",
+    "lat": 38.7521235,
+    "lon": -121.2880059
+  },
+  "US|California|Salinas": {
+    "display": "Salinas, Monterey County, California, United States",
+    "lat": 36.6744117,
+    "lon": -121.655037
+  },
+  "US|California|San Marcos": {
+    "display": "San Marcos, San Diego County, California, United States",
+    "lat": 33.1352995,
+    "lon": -117.1743395
+  },
+  "US|California|San Mateo": {
+    "display": "San Mateo County, California, United States",
+    "lat": 37.496904,
+    "lon": -122.3330573
+  },
+  "US|California|San Ramon": {
+    "display": "San Ramon, Contra Costa County, California, United States",
+    "lat": 37.7648021,
+    "lon": -121.9544387
+  },
+  "US|California|Santa Barbara": {
+    "display": "Santa Barbara, Santa Barbara County, California, United States",
+    "lat": 34.4221319,
+    "lon": -119.702667
+  },
+  "US|California|Santa Clara": {
+    "display": "Santa Clara, Santa Clara County, California, United States",
+    "lat": 37.3541132,
+    "lon": -121.955174
+  },
+  "US|California|Santa Clarita": {
+    "display": "Santa Clarita, Los Angeles County, California, United States",
+    "lat": 34.4127963,
+    "lon": -118.5538088
+  },
+  "US|California|Santa Maria": {
+    "display": "Santa Maria, Santa Barbara County, California, United States",
+    "lat": 34.9531295,
+    "lon": -120.435857
+  },
+  "US|California|Santa Monica": {
+    "display": "Santa Monica, Los Angeles County, California, United States",
+    "lat": 34.0194704,
+    "lon": -118.491227
+  },
+  "US|California|Santa Rosa": {
+    "display": "Santa Rosa, Sonoma County, California, United States",
+    "lat": 38.4404925,
+    "lon": -122.7141049
+  },
+  "US|California|Simi Valley": {
+    "display": "Simi Valley, Ventura County, California, United States",
+    "lat": 34.2677404,
+    "lon": -118.7538071
+  },
+  "US|California|South Gate": {
+    "display": "South Gate, Los Angeles County, California, United States",
+    "lat": 33.9463456,
+    "lon": -118.200981
+  },
+  "US|California|Sunnyvale": {
+    "display": "Sunnyvale, Santa Clara County, California, United States",
+    "lat": 37.3688301,
+    "lon": -122.036349
+  },
+  "US|California|Temecula": {
+    "display": "Temecula, Riverside County, California, United States",
+    "lat": 33.4946353,
+    "lon": -117.147366
+  },
+  "US|California|Thousand Oaks": {
+    "display": "Thousand Oaks, Ventura County, California, United States",
+    "lat": 34.1705609,
+    "lon": -118.8375937
+  },
+  "US|California|Torrance": {
+    "display": "Torrance, Los Angeles County, California, United States",
+    "lat": 33.8371392,
+    "lon": -118.3413606
+  },
+  "US|California|Tracy": {
+    "display": "Tracy, San Joaquin County, California, United States",
+    "lat": 37.7385507,
+    "lon": -121.420139
+  },
+  "US|California|Tustin": {
+    "display": "Tustin, Orange County, California, United States",
+    "lat": 33.7458511,
+    "lon": -117.826166
+  },
+  "US|California|Upland": {
+    "display": "Upland, San Bernardino County, California, United States",
+    "lat": 34.09751,
+    "lon": -117.6483876
+  },
+  "US|California|Vacaville": {
+    "display": "Vacaville, Solano County, California, United States",
+    "lat": 38.3565773,
+    "lon": -121.9877444
+  },
+  "US|California|Vallejo": {
+    "display": "Vallejo, Solano County, California, United States",
+    "lat": 38.1040864,
+    "lon": -122.2566367
+  },
+  "US|California|Victorville": {
+    "display": "Victorville, San Bernardino County, California, United States",
+    "lat": 34.5361067,
+    "lon": -117.2911565
+  },
+  "US|California|Visalia": {
+    "display": "Visalia, Tulare County, California, United States",
+    "lat": 36.3302284,
+    "lon": -119.292058
+  },
+  "US|California|Vista": {
+    "display": "Vista, San Diego County, California, United States",
+    "lat": 33.2021425,
+    "lon": -117.2424805
+  },
+  "US|California|Westminster": {
+    "display": "Westminster, Orange County, California, United States",
+    "lat": 33.7578725,
+    "lon": -117.9859054
+  },
+  "US|California|Whittier": {
+    "display": "Whittier, Los Angeles County, California, United States",
+    "lat": 33.9749136,
+    "lon": -118.0338664
+  },
+  "US|Colorado|Arvada": {
+    "display": "Arvada, Jefferson County, Colorado, United States",
+    "lat": 39.8005505,
+    "lon": -105.0811573
+  },
+  "US|Colorado|Boulder": {
+    "display": "Boulder, Boulder County, Colorado, United States",
+    "lat": 40.0149856,
+    "lon": -105.270545
+  },
+  "US|Colorado|Broomfield": {
+    "display": "Broomfield, Colorado, United States",
+    "lat": 39.9403995,
+    "lon": -105.05208
+  },
+  "US|Colorado|Castle Rock": {
+    "display": "Castle Rock, Douglas County, Colorado, United States",
+    "lat": 39.3722552,
+    "lon": -104.858682
+  },
+  "US|Colorado|Centennial": {
+    "display": "Centennial, Arapahoe County, Colorado, United States",
+    "lat": 39.579155,
+    "lon": -104.8769227
+  },
+  "US|Colorado|Fort Collins": {
+    "display": "Fort Collins, Larimer County, Colorado, United States",
+    "lat": 40.5871782,
+    "lon": -105.0770113
+  },
+  "US|Colorado|Greeley": {
+    "display": "Greeley, Weld County, Colorado, United States",
+    "lat": 40.4233142,
+    "lon": -104.7091322
+  },
+  "US|Colorado|Lakewood": {
+    "display": "Lakewood, Jefferson County, Colorado, United States",
+    "lat": 39.7085736,
+    "lon": -105.0846694
+  },
+  "US|Colorado|Longmont": {
+    "display": "Longmont, Boulder County, Colorado, United States",
+    "lat": 40.1672117,
+    "lon": -105.101928
+  },
+  "US|Colorado|Loveland": {
+    "display": "Loveland, Larimer County, Colorado, United States",
+    "lat": 40.3977612,
+    "lon": -105.07498
+  },
+  "US|Colorado|Pueblo": {
+    "display": "Pueblo, Pueblo County, Colorado, United States",
+    "lat": 38.263995,
+    "lon": -104.6141867
+  },
+  "US|Colorado|Thornton": {
+    "display": "Thornton, Adams County, Colorado, United States",
+    "lat": 39.8695516,
+    "lon": -104.985181
+  },
+  "US|Colorado|Westminster": {
+    "display": "Westminster, Adams County, Colorado, United States",
+    "lat": 39.8366528,
+    "lon": -105.0372046
+  },
+  "US|Connecticut|Bridgeport": {
+    "display": "Bridgeport, Greater Bridgeport Planning Region, Connecticut, United States",
+    "lat": 41.1792695,
+    "lon": -73.1887863
+  },
+  "US|Connecticut|Danbury": {
+    "display": "Danbury, Western Connecticut Planning Region, Connecticut, United States",
+    "lat": 41.394817,
+    "lon": -73.4540111
+  },
+  "US|Connecticut|Hartford": {
+    "display": "Hartford, Capitol Planning Region, Connecticut, United States",
+    "lat": 41.764582,
+    "lon": -72.6908547
+  },
+  "US|Connecticut|New Britain": {
+    "display": "New Britain, Capitol Planning Region, Connecticut, United States",
+    "lat": 41.6612104,
+    "lon": -72.7795419
+  },
+  "US|Connecticut|New Haven": {
+    "display": "New Haven, South Central Connecticut Planning Region, Connecticut, United States",
+    "lat": 41.3082138,
+    "lon": -72.9250518
+  },
+  "US|Connecticut|Norwalk": {
+    "display": "Norwalk, Western Connecticut Planning Region, Connecticut, United States",
+    "lat": 41.1175966,
+    "lon": -73.4078968
+  },
+  "US|Connecticut|Stamford": {
+    "display": "Stamford, Western Connecticut Planning Region, Connecticut, United States",
+    "lat": 41.0534302,
+    "lon": -73.5387341
+  },
+  "US|Connecticut|Waterbury": {
+    "display": "Waterbury, Naugatuck Valley Planning Region, Connecticut, United States",
+    "lat": 41.5538091,
+    "lon": -73.0438362
+  },
+  "US|Florida|Boca Raton": {
+    "display": "Boca Raton, Palm Beach County, Florida, United States",
+    "lat": 26.3586885,
+    "lon": -80.0830984
+  },
+  "US|Florida|Boynton Beach": {
+    "display": "Boynton Beach, Palm Beach County, Florida, United States",
+    "lat": 26.5289139,
+    "lon": -80.058141
+  },
+  "US|Florida|Cape Coral": {
+    "display": "Cape Coral, Lee County, Florida, United States",
+    "lat": 26.5625742,
+    "lon": -81.9438802
+  },
+  "US|Florida|Clearwater": {
+    "display": "Clearwater, Pinellas County, Florida, United States",
+    "lat": 27.9658533,
+    "lon": -82.8001026
+  },
+  "US|Florida|Coral Springs": {
+    "display": "Coral Springs, Broward County, Florida, United States",
+    "lat": 26.271192,
+    "lon": -80.2706044
+  },
+  "US|Florida|Davie": {
+    "display": "Davie, Broward County, Florida, United States",
+    "lat": 26.0628665,
+    "lon": -80.2331038
+  },
+  "US|Florida|Daytona Beach": {
+    "display": "Daytona Beach, Volusia County, Florida, United States",
+    "lat": 29.2108147,
+    "lon": -81.0228331
+  },
+  "US|Florida|Deerfield Beach": {
+    "display": "Deerfield Beach, Broward County, Florida, United States",
+    "lat": 26.318342,
+    "lon": -80.0996306
+  },
+  "US|Florida|Deltona": {
+    "display": "Deltona, Volusia County, Florida, United States",
+    "lat": 28.904843,
+    "lon": -81.2273119
+  },
+  "US|Florida|Doral": {
+    "display": "Doral, Miami-Dade County, Florida, United States",
+    "lat": 25.8195424,
+    "lon": -80.3553302
+  },
+  "US|Florida|Fort Lauderdale": {
+    "display": "Fort Lauderdale, Broward County, Florida, United States",
+    "lat": 26.1223084,
+    "lon": -80.1433786
+  },
+  "US|Florida|Fort Myers": {
+    "display": "Fort Myers, Lee County, Florida, United States",
+    "lat": 26.640628,
+    "lon": -81.8723084
+  },
+  "US|Florida|Gainesville": {
+    "display": "Gainesville, Alachua County, Florida, United States",
+    "lat": 29.6519684,
+    "lon": -82.3249846
+  },
+  "US|Florida|Hialeah": {
+    "display": "Hialeah, Miami-Dade County, Florida, United States",
+    "lat": 25.8267775,
+    "lon": -80.2814009
+  },
+  "US|Florida|Hollywood": {
+    "display": "Hollywood, Broward County, Florida, United States",
+    "lat": 26.0112014,
+    "lon": -80.1494901
+  },
+  "US|Florida|Homestead": {
+    "display": "Homestead, Miami-Dade County, Florida, United States",
+    "lat": 25.4718946,
+    "lon": -80.4759905
+  },
+  "US|Florida|Kissimmee": {
+    "display": "Kissimmee, Osceola County, Florida, United States",
+    "lat": 28.2918995,
+    "lon": -81.4075838
+  },
+  "US|Florida|Lakeland": {
+    "display": "Lakeland, Polk County, Florida, United States",
+    "lat": 28.0394654,
+    "lon": -81.9498042
+  },
+  "US|Florida|Largo": {
+    "display": "Largo, Pinellas County, Florida, United States",
+    "lat": 27.9094665,
+    "lon": -82.7873244
+  },
+  "US|Florida|Lauderhill": {
+    "display": "Lauderhill, Broward County, Florida, 33313, United States",
+    "lat": 26.1403635,
+    "lon": -80.2133808
+  },
+  "US|Florida|Melbourne": {
+    "display": "Melbourne, Brevard County, Florida, United States",
+    "lat": 28.0785034,
+    "lon": -80.6077908
+  },
+  "US|Florida|Miami Beach": {
+    "display": "Miami Beach, Miami-Dade County, Florida, United States",
+    "lat": 25.7929198,
+    "lon": -80.1353006
+  },
+  "US|Florida|Miami Gardens": {
+    "display": "Miami Gardens, Miami-Dade County, Florida, United States",
+    "lat": 25.9420377,
+    "lon": -80.2456045
+  },
+  "US|Florida|Miramar": {
+    "display": "Miramar, Broward County, Florida, 33023, United States",
+    "lat": 25.9873137,
+    "lon": -80.2322706
+  },
+  "US|Florida|North Port": {
+    "display": "North Port, Sarasota County, Florida, United States",
+    "lat": 27.044224,
+    "lon": -82.2359254
+  },
+  "US|Florida|Palm Bay": {
+    "display": "Palm Bay, Brevard County, Florida, United States",
+    "lat": 27.9946969,
+    "lon": -80.6366144
+  },
+  "US|Florida|Palm Coast": {
+    "display": "Palm Coast, Flagler County, Florida, United States",
+    "lat": 29.5541432,
+    "lon": -81.2207673
+  },
+  "US|Florida|Pembroke Pines": {
+    "display": "Pembroke Pines, Broward County, Florida, United States",
+    "lat": 26.0061943,
+    "lon": -80.2872086
+  },
+  "US|Florida|Plantation": {
+    "display": "Plantation, Broward County, Florida, United States",
+    "lat": 26.1275862,
+    "lon": -80.2331036
+  },
+  "US|Florida|Pompano Beach": {
+    "display": "Pompano Beach, Broward County, Florida, United States",
+    "lat": 26.2378597,
+    "lon": -80.1247667
+  },
+  "US|Florida|Sunrise": {
+    "display": "Sunrise, Broward County, Florida, United States",
+    "lat": 26.1666888,
+    "lon": -80.2787573
+  },
+  "US|Florida|Tallahassee": {
+    "display": "Tallahassee, Leon County, Florida, United States",
+    "lat": 30.4380832,
+    "lon": -84.2809332
+  },
+  "US|Florida|Tamarac": {
+    "display": "Tamarac, Broward County, Florida, United States",
+    "lat": 26.2128609,
+    "lon": -80.2497707
+  },
+  "US|Florida|West Palm Beach": {
+    "display": "West Palm Beach, Palm Beach County, Florida, United States",
+    "lat": 26.715364,
+    "lon": -80.0532942
+  },
+  "US|Georgia|Columbus": {
+    "display": "Columbus, Muscogee County, Georgia, United States",
+    "lat": 32.4610708,
+    "lon": -84.9880449
+  },
+  "US|Georgia|Johns Creek": {
+    "display": "Johns Creek, Fulton County, Georgia, United States",
+    "lat": 34.0181557,
+    "lon": -84.190196
+  },
+  "US|Georgia|Macon-Bibb": {
+    "display": "VFW Post, Harrison Road, Bloomfield Farms, Macon, Bibb County, Georgia, 31206, United States",
+    "lat": 32.815138,
+    "lon": -83.7245793
+  },
+  "US|Georgia|Roswell": {
+    "display": "Roswell, Fulton County, Georgia, United States",
+    "lat": 34.02332,
+    "lon": -84.360022
+  },
+  "US|Georgia|Sandy Springs": {
+    "display": "Sandy Springs, Fulton County, Georgia, United States",
+    "lat": 33.9242688,
+    "lon": -84.3785379
+  },
+  "US|Georgia|Savannah": {
+    "display": "Savannah, Chatham County, Georgia, United States",
+    "lat": 32.0790074,
+    "lon": -81.0921335
+  },
+  "US|Georgia|South Fulton": {
+    "display": "South Fulton, Fulton County, Georgia, United States",
+    "lat": 33.5902659,
+    "lon": -84.6712292
+  },
+  "US|Georgia|Warner Robins": {
+    "display": "Warner Robins, Houston County, Georgia, United States",
+    "lat": 32.6200973,
+    "lon": -83.606568
+  },
+  "US|Idaho|Meridian": {
+    "display": "Meridian, Ada County, Idaho, 83646, United States",
+    "lat": 43.6086295,
+    "lon": -116.392326
+  },
+  "US|Idaho|Nampa": {
+    "display": "Nampa, Canyon County, Idaho, United States",
+    "lat": 43.5780381,
+    "lon": -116.5616885
+  },
+  "US|Illinois|Arlington Heights": {
+    "display": "Arlington Heights, Wheeling Township, Cook County, Illinois, United States",
+    "lat": 42.0811563,
+    "lon": -87.9802164
+  },
+  "US|Illinois|Aurora": {
+    "display": "Aurora, Aurora Township, Kane County, Illinois, United States",
+    "lat": 41.7571701,
+    "lon": -88.3147539
+  },
+  "US|Illinois|Bloomington": {
+    "display": "Bloomington, McLean County, Illinois, United States",
+    "lat": 40.4797828,
+    "lon": -88.9939147
+  },
+  "US|Illinois|Champaign": {
+    "display": "Champaign, Champaign County, Illinois, United States",
+    "lat": 40.1164841,
+    "lon": -88.2430932
+  },
+  "US|Illinois|Cicero": {
+    "display": "Cicero, Cook County, Illinois, 60804, United States",
+    "lat": 41.8455398,
+    "lon": -87.7540199
+  },
+  "US|Illinois|Elgin": {
+    "display": "Elgin, Elgin Township, Kane County, Illinois, United States",
+    "lat": 42.03726,
+    "lon": -88.2810994
+  },
+  "US|Illinois|Evanston": {
+    "display": "Evanston, Evanston Township, Cook County, Illinois, United States",
+    "lat": 42.0470043,
+    "lon": -87.6846053
+  },
+  "US|Illinois|Joliet": {
+    "display": "Joliet, Will County, Illinois, United States",
+    "lat": 41.5263603,
+    "lon": -88.0840212
+  },
+  "US|Illinois|Naperville": {
+    "display": "Naperville, Naperville Township, DuPage County, Illinois, United States",
+    "lat": 41.7728699,
+    "lon": -88.1479278
+  },
+  "US|Illinois|Peoria": {
+    "display": "Peoria, Peoria County, Illinois, United States",
+    "lat": 40.6938609,
+    "lon": -89.5891008
+  },
+  "US|Illinois|Rockford": {
+    "display": "Rockford, Rockford Township, Winnebago County, Illinois, United States",
+    "lat": 42.2713945,
+    "lon": -89.093966
+  },
+  "US|Illinois|Schaumburg": {
+    "display": "Schaumburg, Schaumburg Township, Cook County, Illinois, United States",
+    "lat": 42.0333608,
+    "lon": -88.083406
+  },
+  "US|Illinois|Springfield": {
+    "display": "Springfield, Sangamon County, Illinois, United States",
+    "lat": 39.7990175,
+    "lon": -89.6439575
+  },
+  "US|Illinois|Waukegan": {
+    "display": "Waukegan, Lake County, Illinois, United States",
+    "lat": 42.3602273,
+    "lon": -87.8318164
+  },
+  "US|Indiana|Bloomington": {
+    "display": "Bloomington, Monroe County, Indiana, United States",
+    "lat": 39.1670396,
+    "lon": -86.5342881
+  },
+  "US|Indiana|Carmel": {
+    "display": "Carmel, Hamilton County, Indiana, United States",
+    "lat": 39.9784186,
+    "lon": -86.1283681
+  },
+  "US|Indiana|Evansville": {
+    "display": "Evansville, Vanderburgh County, Indiana, United States",
+    "lat": 37.970495,
+    "lon": -87.5715641
+  },
+  "US|Indiana|Fishers": {
+    "display": "Fishers, Hamilton County, Indiana, United States",
+    "lat": 39.9555928,
+    "lon": -86.0138729
+  },
+  "US|Indiana|Fort Wayne": {
+    "display": "Fort Wayne, Allen County, Indiana, United States",
+    "lat": 41.0799898,
+    "lon": -85.1386015
+  },
+  "US|Indiana|Hammond": {
+    "display": "Hammond, North Township, Lake County, Indiana, United States",
+    "lat": 41.6173959,
+    "lon": -87.5220108
+  },
+  "US|Indiana|Noblesville": {
+    "display": "Noblesville, Hamilton County, Indiana, 46060, United States",
+    "lat": 40.0460881,
+    "lon": -86.0139854
+  },
+  "US|Indiana|South Bend": {
+    "display": "South Bend, Saint Joseph County, Indiana, United States",
+    "lat": 41.6833813,
+    "lon": -86.2500066
+  },
+  "US|Iowa|Ankeny": {
+    "display": "Ankeny, Polk County, Iowa, United States",
+    "lat": 41.7320796,
+    "lon": -93.605092
+  },
+  "US|Iowa|Cedar Rapids": {
+    "display": "Cedar Rapids, Linn County, Iowa, United States",
+    "lat": 41.9758872,
+    "lon": -91.6704053
+  },
+  "US|Iowa|Des Moines": {
+    "display": "Des Moines, Polk County, Iowa, United States",
+    "lat": 41.5868654,
+    "lon": -93.6249494
+  },
+  "US|Iowa|Iowa City": {
+    "display": "Iowa City, Johnson County, Iowa, United States",
+    "lat": 41.6612561,
+    "lon": -91.5299106
+  },
+  "US|Iowa|Sioux City": {
+    "display": "Sioux City, Woodbury County, Iowa, United States",
+    "lat": 42.4966815,
+    "lon": -96.4058782
+  },
+  "US|Kansas|Lawrence": {
+    "display": "Lawrence, Douglas County, Kansas, United States",
+    "lat": 38.9719137,
+    "lon": -95.2359403
+  },
+  "US|Kansas|Olathe": {
+    "display": "Olathe, Johnson County, Kansas, United States",
+    "lat": 38.8838856,
+    "lon": -94.81887
+  },
+  "US|Kansas|Overland Park": {
+    "display": "Overland Park, Johnson County, Kansas, United States",
+    "lat": 38.9742502,
+    "lon": -94.6851702
+  },
+  "US|Kansas|Topeka": {
+    "display": "Topeka, Shawnee County, Kansas, United States",
+    "lat": 39.049011,
+    "lon": -95.677556
+  },
+  "US|Kentucky|Bowling Green": {
+    "display": "Bowling Green, Warren County, Kentucky, 42101, United States",
+    "lat": 36.9929203,
+    "lon": -86.4428677
+  },
+  "US|Louisiana|Lake Charles": {
+    "display": "Lake Charles, Calcasieu Parish, Louisiana, United States",
+    "lat": 30.2305095,
+    "lon": -93.2169807
+  },
+  "US|Louisiana|Shreveport": {
+    "display": "Shreveport, Caddo Parish, Louisiana, United States",
+    "lat": 32.5135356,
+    "lon": -93.7477839
+  },
+  "US|Maryland|Frederick": {
+    "display": "Frederick, Frederick County, Maryland, United States",
+    "lat": 39.415779,
+    "lon": -77.4127562
+  },
+  "US|Massachusetts|Brockton": {
+    "display": "Brockton, Plymouth County, Massachusetts, United States",
+    "lat": 42.0834335,
+    "lon": -71.0183787
+  },
+  "US|Massachusetts|Cambridge": {
+    "display": "Cambridge, Middlesex County, Massachusetts, United States",
+    "lat": 42.3656347,
+    "lon": -71.1040018
+  },
+  "US|Massachusetts|Fall River": {
+    "display": "Fall River, Bristol County, Massachusetts, United States",
+    "lat": 41.7010642,
+    "lon": -71.1546367
+  },
+  "US|Massachusetts|Lawrence": {
+    "display": "Lawrence, Essex County, Massachusetts, United States",
+    "lat": 42.7070354,
+    "lon": -71.1631137
+  },
+  "US|Massachusetts|Lowell": {
+    "display": "Lowell, Middlesex County, Massachusetts, United States",
+    "lat": 42.6414437,
+    "lon": -71.3085329
+  },
+  "US|Massachusetts|Lynn": {
+    "display": "Lynn, Essex County, Massachusetts, United States",
+    "lat": 42.466763,
+    "lon": -70.9494939
+  },
+  "US|Massachusetts|New Bedford": {
+    "display": "New Bedford, Bristol County, Massachusetts, United States",
+    "lat": 41.6362152,
+    "lon": -70.934205
+  },
+  "US|Massachusetts|Newton": {
+    "display": "Newton, Middlesex County, Massachusetts, United States",
+    "lat": 42.3300435,
+    "lon": -71.194862
+  },
+  "US|Massachusetts|Quincy": {
+    "display": "Quincy, Norfolk County, Massachusetts, United States",
+    "lat": 42.2509914,
+    "lon": -71.0037374
+  },
+  "US|Massachusetts|Somerville": {
+    "display": "Somerville, Middlesex County, Massachusetts, United States",
+    "lat": 42.3875968,
+    "lon": -71.0994968
+  },
+  "US|Massachusetts|Springfield": {
+    "display": "Springfield, Hampden County, Massachusetts, United States",
+    "lat": 42.1018764,
+    "lon": -72.5886727
+  },
+  "US|Massachusetts|Worcester": {
+    "display": "Worcester, Worcester County, Massachusetts, United States",
+    "lat": 42.2625621,
+    "lon": -71.8018877
+  },
+  "US|Michigan|Ann Arbor": {
+    "display": "Ann Arbor, Washtenaw County, Michigan, United States",
+    "lat": 42.2813722,
+    "lon": -83.7484616
+  },
+  "US|Michigan|Dearborn": {
+    "display": "Dearborn, Wayne County, Michigan, United States",
+    "lat": 42.3222599,
+    "lon": -83.1763145
+  },
+  "US|Michigan|Farmington Hills": {
+    "display": "Farmington Hills, Oakland County, Michigan, United States",
+    "lat": 42.4853125,
+    "lon": -83.3771553
+  },
+  "US|Michigan|Flint": {
+    "display": "Flint, Genesee County, Michigan, United States",
+    "lat": 43.0161693,
+    "lon": -83.6900211
+  },
+  "US|Michigan|Grand Rapids": {
+    "display": "Grand Rapids, Kent County, Michigan, United States",
+    "lat": 42.9632425,
+    "lon": -85.6678639
+  },
+  "US|Michigan|Lansing": {
+    "display": "Lansing, Ingham County, Michigan, United States",
+    "lat": 42.7338254,
+    "lon": -84.5546295
+  },
+  "US|Michigan|Livonia": {
+    "display": "Livonia, Wayne County, Michigan, United States",
+    "lat": 42.36837,
+    "lon": -83.3527097
+  },
+  "US|Michigan|Rochester Hills": {
+    "display": "Rochester Hills, Oakland County, Michigan, United States",
+    "lat": 42.6583661,
+    "lon": -83.1499322
+  },
+  "US|Michigan|Southfield": {
+    "display": "Southfield, Oakland County, Michigan, United States",
+    "lat": 42.4733689,
+    "lon": -83.2218731
+  },
+  "US|Michigan|Sterling Heights": {
+    "display": "Sterling Heights, Macomb County, Michigan, United States",
+    "lat": 42.5803122,
+    "lon": -83.0302033
+  },
+  "US|Michigan|Troy": {
+    "display": "Troy, Oakland County, Michigan, United States",
+    "lat": 42.6055893,
+    "lon": -83.1499304
+  },
+  "US|Michigan|Warren": {
+    "display": "Warren, Macomb County, Michigan, United States",
+    "lat": 42.4932575,
+    "lon": -83.0062746
+  },
+  "US|Michigan|Westland": {
+    "display": "Westland, Wayne County, Michigan, United States",
+    "lat": 42.3238056,
+    "lon": -83.4005321
+  },
+  "US|Michigan|Wyoming": {
+    "display": "Wyoming, Kent County, Michigan, United States",
+    "lat": 42.9132581,
+    "lon": -85.7057035
+  },
+  "US|Minnesota|Blaine": {
+    "display": "Blaine, Anoka County, Minnesota, United States",
+    "lat": 45.1607987,
+    "lon": -93.2349489
+  },
+  "US|Minnesota|Bloomington": {
+    "display": "Bloomington, Hennepin County, Minnesota, United States",
+    "lat": 44.8322405,
+    "lon": -93.3204872
+  },
+  "US|Minnesota|Brooklyn Park": {
+    "display": "Brooklyn Park, Hennepin County, Minnesota, United States",
+    "lat": 45.1004807,
+    "lon": -93.3443585
+  },
+  "US|Minnesota|Duluth": {
+    "display": "Duluth, Saint Louis County, Minnesota, United States",
+    "lat": 46.7838287,
+    "lon": -92.1052679
+  },
+  "US|Minnesota|Lakeville": {
+    "display": "Lakeville, Dakota County, Minnesota, 55044, United States",
+    "lat": 44.650051,
+    "lon": -93.2432791
+  },
+  "US|Minnesota|Plymouth": {
+    "display": "Plymouth, Hennepin County, Minnesota, United States",
+    "lat": 45.0065149,
+    "lon": -93.46651
+  },
+  "US|Minnesota|Rochester": {
+    "display": "Rochester, Olmsted County, Minnesota, United States",
+    "lat": 44.0234387,
+    "lon": -92.4630182
+  },
+  "US|Minnesota|Woodbury": {
+    "display": "Woodbury, Washington County, Minnesota, United States",
+    "lat": 44.919896,
+    "lon": -92.9339449
+  },
+  "US|Mississippi|Jackson": {
+    "display": "Jackson, Hinds County, Mississippi, United States",
+    "lat": 32.2998686,
+    "lon": -90.1830408
+  },
+  "US|Missouri|Columbia": {
+    "display": "Columbia, Columbia Township, Boone County, Missouri, United States",
+    "lat": 38.951883,
+    "lon": -92.3337366
+  },
+  "US|Missouri|Independence": {
+    "display": "Independence, Jackson County, Missouri, United States",
+    "lat": 39.0924792,
+    "lon": -94.4137923
+  },
+  "US|Missouri|O'Fallon": {
+    "display": "O’Fallon, Saint Charles County, Missouri, United States",
+    "lat": 38.7902503,
+    "lon": -90.7033292
+  },
+  "US|Missouri|Springfield": {
+    "display": "Springfield, Greene County, Missouri, United States",
+    "lat": 37.2081729,
+    "lon": -93.2922715
+  },
+  "US|Montana|Billings": {
+    "display": "Billings, Yellowstone County, Montana, United States",
+    "lat": 45.7874957,
+    "lon": -108.49607
+  },
+  "US|Montana|Missoula": {
+    "display": "Missoula, Missoula County, Montana, United States",
+    "lat": 46.8701049,
+    "lon": -113.995267
+  },
+  "US|Nevada|North Las Vegas": {
+    "display": "North Las Vegas, Clark County, Nevada, United States",
+    "lat": 36.2005191,
+    "lon": -115.1214745
+  },
+  "US|Nevada|Reno": {
+    "display": "Reno, Washoe County, Nevada, United States",
+    "lat": 39.5261788,
+    "lon": -119.812658
+  },
+  "US|Nevada|Sparks": {
+    "display": "Sparks, Washoe County, Nevada, United States",
+    "lat": 39.5404679,
+    "lon": -119.7487235
+  },
+  "US|New Hampshire|Manchester": {
+    "display": "Manchester, Hillsborough County, New Hampshire, United States",
+    "lat": 42.9956397,
+    "lon": -71.4547891
+  },
+  "US|New Hampshire|Nashua": {
+    "display": "Nashua, Hillsborough County, New Hampshire, United States",
+    "lat": 42.7656251,
+    "lon": -71.4677032
+  },
+  "US|New Jersey|Clifton": {
+    "display": "Clifton, Passaic County, New Jersey, United States",
+    "lat": 40.8584328,
+    "lon": -74.1637553
+  },
+  "US|New Jersey|Elizabeth": {
+    "display": "Elizabeth, Union County, New Jersey, United States",
+    "lat": 40.6639916,
+    "lon": -74.2107006
+  },
+  "US|New Jersey|Paterson": {
+    "display": "Paterson, Passaic County, New Jersey, United States",
+    "lat": 40.9167654,
+    "lon": -74.171811
+  },
+  "US|New Jersey|Trenton": {
+    "display": "Trenton, Mercer County, New Jersey, United States",
+    "lat": 40.2203074,
+    "lon": -74.7659
+  },
+  "US|New Mexico|Las Cruces": {
+    "display": "Las Cruces, Doña Ana County, New Mexico, United States",
+    "lat": 32.3140354,
+    "lon": -106.779807
+  },
+  "US|New Mexico|Rio Rancho": {
+    "display": "Rio Rancho, Sandoval County, New Mexico, United States",
+    "lat": 35.3108227,
+    "lon": -106.6847453
+  },
+  "US|New Mexico|Santa Fe": {
+    "display": "Santa Fe, Santa Fe County, New Mexico, United States",
+    "lat": 35.6876096,
+    "lon": -105.938456
+  },
+  "US|New York|Albany": {
+    "display": "City of Albany, Albany County, New York, United States",
+    "lat": 42.6511674,
+    "lon": -73.754968
+  },
+  "US|New York|Buffalo": {
+    "display": "Buffalo, Erie County, New York, United States",
+    "lat": 42.8864163,
+    "lon": -78.8781493
+  },
+  "US|New York|Rochester": {
+    "display": "City of Rochester, Monroe County, New York, United States",
+    "lat": 43.157285,
+    "lon": -77.615214
+  },
+  "US|New York|Syracuse": {
+    "display": "City of Syracuse, Onondaga County, New York, United States",
+    "lat": 43.0481221,
+    "lon": -76.1474244
+  },
+  "US|New York|Yonkers": {
+    "display": "City of Yonkers, Westchester County, New York, United States",
+    "lat": 40.9312099,
+    "lon": -73.8987469
+  },
+  "US|North Carolina|Apex": {
+    "display": "Apex, Wake County, North Carolina, 27502, United States",
+    "lat": 35.7325352,
+    "lon": -78.8505516
+  },
+  "US|North Carolina|Asheville": {
+    "display": "Asheville, Buncombe County, North Carolina, United States",
+    "lat": 35.595363,
+    "lon": -82.5508407
+  },
+  "US|North Carolina|Cary": {
+    "display": "Cary, Wake County, North Carolina, United States",
+    "lat": 35.7882893,
+    "lon": -78.7812081
+  },
+  "US|North Carolina|Concord": {
+    "display": "Concord, Cabarrus County, North Carolina, United States",
+    "lat": 35.4094178,
+    "lon": -80.5800049
+  },
+  "US|North Carolina|Fayetteville": {
+    "display": "Fayetteville, Cumberland County, North Carolina, United States",
+    "lat": 35.0525759,
+    "lon": -78.878292
+  },
+  "US|North Carolina|Gastonia": {
+    "display": "Gastonia, Gaston County, North Carolina, United States",
+    "lat": 35.2622654,
+    "lon": -81.1838186
+  },
+  "US|North Carolina|Greenville": {
+    "display": "Greenville, Pitt County, North Carolina, United States",
+    "lat": 35.613224,
+    "lon": -77.3724593
+  },
+  "US|North Carolina|High Point": {
+    "display": "High Point, Guilford County, North Carolina, United States",
+    "lat": 35.9556924,
+    "lon": -80.0053176
+  },
+  "US|North Carolina|Wilmington": {
+    "display": "Wilmington, New Hanover County, North Carolina, United States",
+    "lat": 34.2352853,
+    "lon": -77.9487284
+  },
+  "US|North Carolina|Winston-Salem": {
+    "display": "Winston-Salem, Forsyth County, North Carolina, United States",
+    "lat": 36.0998131,
+    "lon": -80.2440518
+  },
+  "US|North Dakota|Bismarck": {
+    "display": "Bismarck, Burleigh County, North Dakota, United States",
+    "lat": 46.808327,
+    "lon": -100.783739
+  },
+  "US|North Dakota|Fargo": {
+    "display": "Fargo, Cass County, North Dakota, United States",
+    "lat": 46.877229,
+    "lon": -96.789821
+  },
+  "US|Ohio|Akron": {
+    "display": "Akron, Summit County, Ohio, United States",
+    "lat": 41.083064,
+    "lon": -81.518485
+  },
+  "US|Ohio|Dayton": {
+    "display": "Dayton, Montgomery County, Ohio, United States",
+    "lat": 39.7589478,
+    "lon": -84.1916069
+  },
+  "US|Ohio|Parma": {
+    "display": "Parma, Cuyahoga County, Ohio, United States",
+    "lat": 41.3822398,
+    "lon": -81.7355692
+  },
+  "US|Ohio|Toledo": {
+    "display": "Toledo, Lucas County, Ohio, United States",
+    "lat": 41.6529143,
+    "lon": -83.5378173
+  },
+  "US|Oklahoma|Broken Arrow": {
+    "display": "Broken Arrow, Tulsa, Oklahoma, United States",
+    "lat": 36.0525993,
+    "lon": -95.7908195
+  },
+  "US|Oklahoma|Edmond": {
+    "display": "Edmond, Oklahoma County, Oklahoma, United States",
+    "lat": 35.6571367,
+    "lon": -97.4649038
+  },
+  "US|Oklahoma|Lawton": {
+    "display": "Lawton, Comanche County, Oklahoma, United States",
+    "lat": 34.6051975,
+    "lon": -98.3952279
+  },
+  "US|Oklahoma|Norman": {
+    "display": "Norman, Cleveland County, Oklahoma, United States",
+    "lat": 35.2225717,
+    "lon": -97.4394816
+  },
+  "US|Oregon|Beaverton": {
+    "display": "Beaverton, Washington County, Oregon, United States",
+    "lat": 45.4871723,
+    "lon": -122.80378
+  },
+  "US|Oregon|Bend": {
+    "display": "Bend, Deschutes County, Oregon, United States",
+    "lat": 44.0581728,
+    "lon": -121.3153096
+  },
+  "US|Oregon|Eugene": {
+    "display": "Eugene, Lane County, Oregon, United States",
+    "lat": 44.0505054,
+    "lon": -123.0950506
+  },
+  "US|Oregon|Gresham": {
+    "display": "Gresham, Multnomah County, Oregon, United States",
+    "lat": 45.4978623,
+    "lon": -122.4329883
+  },
+  "US|Oregon|Hillsboro": {
+    "display": "Hillsboro, Washington County, Oregon, United States",
+    "lat": 45.5228939,
+    "lon": -122.989827
+  },
+  "US|Oregon|Medford": {
+    "display": "Medford, Jackson County, Oregon, United States",
+    "lat": 42.3264181,
+    "lon": -122.8718605
+  },
+  "US|Oregon|Salem": {
+    "display": "Salem, Marion County, Oregon, United States",
+    "lat": 44.9391565,
+    "lon": -123.033121
+  },
+  "US|Pennsylvania|Allentown": {
+    "display": "Allentown, Lehigh County, Pennsylvania, United States",
+    "lat": 40.6022552,
+    "lon": -75.4716115
+  },
+  "US|Pennsylvania|Erie": {
+    "display": "Erie, Erie County, Pennsylvania, United States",
+    "lat": 42.1294712,
+    "lon": -80.0852695
+  },
+  "US|Pennsylvania|Reading": {
+    "display": "Reading, Berks County, Pennsylvania, United States",
+    "lat": 40.335345,
+    "lon": -75.9279495
+  },
+  "US|Pennsylvania|Scranton": {
+    "display": "Scranton, Lackawanna County, Pennsylvania, United States",
+    "lat": 41.4086874,
+    "lon": -75.6621294
+  },
+  "US|Rhode Island|Cranston": {
+    "display": "Cranston, Providence County, Rhode Island, United States",
+    "lat": 41.779588,
+    "lon": -71.4366813
+  },
+  "US|Rhode Island|Pawtucket": {
+    "display": "Pawtucket, Providence County, Rhode Island, United States",
+    "lat": 41.8789531,
+    "lon": -71.3821203
+  },
+  "US|Rhode Island|Providence": {
+    "display": "Providence, Providence County, Rhode Island, United States",
+    "lat": 41.8239891,
+    "lon": -71.4128343
+  },
+  "US|Rhode Island|Warwick": {
+    "display": "Warwick, Kent County, Rhode Island, United States",
+    "lat": 41.6992717,
+    "lon": -71.4586114
+  },
+  "US|South Carolina|Charleston": {
+    "display": "Charleston, Charleston County, South Carolina, United States",
+    "lat": 32.7884363,
+    "lon": -79.9399309
+  },
+  "US|South Carolina|Columbia": {
+    "display": "Columbia, Richland County, South Carolina, United States",
+    "lat": 34.000754,
+    "lon": -81.0352313
+  },
+  "US|South Carolina|Mount Pleasant": {
+    "display": "Mount Pleasant, Charleston County, South Carolina, United States",
+    "lat": 32.7940651,
+    "lon": -79.8625851
+  },
+  "US|South Carolina|North Charleston": {
+    "display": "North Charleston, Charleston County, South Carolina, United States",
+    "lat": 32.8546197,
+    "lon": -79.9748103
+  },
+  "US|South Carolina|Rock Hill": {
+    "display": "Rock Hill, York County, South Carolina, United States",
+    "lat": 34.9248667,
+    "lon": -81.0250784
+  },
+  "US|South Dakota|Rapid City": {
+    "display": "Rapid City, Pennington County, South Dakota, United States",
+    "lat": 44.0806041,
+    "lon": -103.228023
+  },
+  "US|South Dakota|Sioux Falls": {
+    "display": "Sioux Falls, Sioux Falls Township, Minnehaha County, South Dakota, United States",
+    "lat": 43.5476008,
+    "lon": -96.7293629
+  },
+  "US|Tennessee|Chattanooga": {
+    "display": "Chattanooga, Hamilton County, East Tennessee, Tennessee, United States",
+    "lat": 35.0457219,
+    "lon": -85.3094883
+  },
+  "US|Tennessee|Clarksville": {
+    "display": "Clarksville, Montgomery County, Middle Tennessee, Tennessee, United States",
+    "lat": 36.5277607,
+    "lon": -87.3588703
+  },
+  "US|Tennessee|Franklin": {
+    "display": "Franklin, Williamson County, Middle Tennessee, Tennessee, United States",
+    "lat": 35.925206,
+    "lon": -86.8689419
+  },
+  "US|Tennessee|Knoxville": {
+    "display": "Knoxville, Knox County, East Tennessee, Tennessee, United States",
+    "lat": 35.9603948,
+    "lon": -83.9210261
+  },
+  "US|Tennessee|Murfreesboro": {
+    "display": "Murfreesboro, Rutherford County, Middle Tennessee, Tennessee, United States",
+    "lat": 35.8460396,
+    "lon": -86.3921096
+  },
+  "US|Texas|Abilene": {
+    "display": "Abilene, Taylor County, Texas, United States",
+    "lat": 32.44645,
+    "lon": -99.7475905
+  },
+  "US|Texas|Allen": {
+    "display": "Allen, Collin County, Texas, United States",
+    "lat": 33.1031744,
+    "lon": -96.6705503
+  },
+  "US|Texas|Amarillo": {
+    "display": "Amarillo, Potter County, Texas, United States",
+    "lat": 35.20729,
+    "lon": -101.8371192
+  },
+  "US|Texas|Baytown": {
+    "display": "Baytown, Harris County, Texas, United States",
+    "lat": 29.7355047,
+    "lon": -94.9774274
+  },
+  "US|Texas|Beaumont": {
+    "display": "Beaumont, Jefferson County, Texas, United States",
+    "lat": 30.0829344,
+    "lon": -94.0984277
+  },
+  "US|Texas|Brownsville": {
+    "display": "Brownsville, Cameron County, Texas, United States",
+    "lat": 25.9024289,
+    "lon": -97.4981698
+  },
+  "US|Texas|Bryan": {
+    "display": "Bryan, Brazos County, Texas, United States",
+    "lat": 30.6743643,
+    "lon": -96.3699632
+  },
+  "US|Texas|Carrollton": {
+    "display": "Carrollton, Dallas County, Texas, United States",
+    "lat": 32.9515472,
+    "lon": -96.9034244
+  },
+  "US|Texas|Cedar Park": {
+    "display": "Cedar Park, Williamson County, Texas, United States",
+    "lat": 30.5217116,
+    "lon": -97.827833
+  },
+  "US|Texas|College Station": {
+    "display": "College Station, Brazos County, Texas, United States",
+    "lat": 30.6183939,
+    "lon": -96.3455991
+  },
+  "US|Texas|Conroe": {
+    "display": "Conroe, Montgomery County, Texas, United States",
+    "lat": 30.3118769,
+    "lon": -95.4560512
+  },
+  "US|Texas|Denton": {
+    "display": "Denton County, Texas, United States",
+    "lat": 33.1838787,
+    "lon": -97.1413417
+  },
+  "US|Texas|Edinburg": {
+    "display": "Edinburg, Hidalgo County, Texas, United States",
+    "lat": 26.3013982,
+    "lon": -98.1624501
+  },
+  "US|Texas|Flower Mound": {
+    "display": "Flower Mound, Denton County, Texas, United States",
+    "lat": 33.0283854,
+    "lon": -97.0867203
+  },
+  "US|Texas|Frisco": {
+    "display": "Frisco, Collin County, Texas, United States",
+    "lat": 33.1505998,
+    "lon": -96.8238183
+  },
+  "US|Texas|Garland": {
+    "display": "Garland, Dallas County, Texas, United States",
+    "lat": 32.912624,
+    "lon": -96.6388833
+  },
+  "US|Texas|Georgetown": {
+    "display": "Georgetown, Williamson County, Texas, United States",
+    "lat": 30.6370152,
+    "lon": -97.6775634
+  },
+  "US|Texas|Grand Prairie": {
+    "display": "Grand Prairie, Dallas County, Texas, United States",
+    "lat": 32.7459645,
+    "lon": -96.9977846
+  },
+  "US|Texas|Irving": {
+    "display": "Irving, Dallas County, Texas, United States",
+    "lat": 32.8295183,
+    "lon": -96.9442177
+  },
+  "US|Texas|Killeen": {
+    "display": "Killeen, Bell County, Texas, United States",
+    "lat": 31.1171441,
+    "lon": -97.727796
+  },
+  "US|Texas|Laredo": {
+    "display": "Laredo, Webb County, Texas, United States",
+    "lat": 27.5079211,
+    "lon": -99.5069834
+  },
+  "US|Texas|League City": {
+    "display": "League City, Galveston County, Texas, 77573, United States",
+    "lat": 29.5074538,
+    "lon": -95.0949303
+  },
+  "US|Texas|Leander": {
+    "display": "Leander, Williamson County, Texas, United States",
+    "lat": 30.5736134,
+    "lon": -97.8567339
+  },
+  "US|Texas|Lewisville": {
+    "display": "Lewisville, Denton County, Texas, United States",
+    "lat": 33.046233,
+    "lon": -96.994174
+  },
+  "US|Texas|Longview": {
+    "display": "Longview, Gregg County, Texas, United States",
+    "lat": 32.5007031,
+    "lon": -94.74049
+  },
+  "US|Texas|Lubbock": {
+    "display": "Lubbock, Lubbock County, Texas, United States",
+    "lat": 33.5855677,
+    "lon": -101.8470215
+  },
+  "US|Texas|Mansfield": {
+    "display": "Mansfield, Tarrant County, Texas, 76063, United States",
+    "lat": 32.563487,
+    "lon": -97.1420308
+  },
+  "US|Texas|McAllen": {
+    "display": "McAllen, Hidalgo County, Texas, United States",
+    "lat": 26.204114,
+    "lon": -98.2300605
+  },
+  "US|Texas|McKinney": {
+    "display": "McKinney, Collin County, Texas, United States",
+    "lat": 33.1976496,
+    "lon": -96.6154471
+  },
+  "US|Texas|Mesquite": {
+    "display": "Mesquite, Dallas County, Texas, United States",
+    "lat": 32.7666103,
+    "lon": -96.599472
+  },
+  "US|Texas|Midland": {
+    "display": "Midland County, Texas, United States",
+    "lat": 31.83688,
+    "lon": -102.0103767
+  },
+  "US|Texas|Mission": {
+    "display": "Mission, Hidalgo County, Texas, United States",
+    "lat": 26.2159066,
+    "lon": -98.3252932
+  },
+  "US|Texas|New Braunfels": {
+    "display": "New Braunfels, Comal County, Texas, United States",
+    "lat": 29.7028266,
+    "lon": -98.1257348
+  },
+  "US|Texas|Odessa": {
+    "display": "Odessa, Ector County, Texas, United States",
+    "lat": 31.8457149,
+    "lon": -102.367687
+  },
+  "US|Texas|Pasadena": {
+    "display": "Pasadena, Harris County, Texas, United States",
+    "lat": 29.6910753,
+    "lon": -95.2092076
+  },
+  "US|Texas|Pearland": {
+    "display": "Pearland, Brazoria County, Texas, 77581, United States",
+    "lat": 29.5639758,
+    "lon": -95.2864299
+  },
+  "US|Texas|Plano": {
+    "display": "Plano, Collin County, Texas, United States",
+    "lat": 33.0136764,
+    "lon": -96.6925096
+  },
+  "US|Texas|Richardson": {
+    "display": "Richardson, Dallas County, Texas, United States",
+    "lat": 32.9481789,
+    "lon": -96.7297206
+  },
+  "US|Texas|Round Rock": {
+    "display": "Round Rock, Williamson County, Texas, United States",
+    "lat": 30.5085915,
+    "lon": -97.6788056
+  },
+  "US|Texas|San Angelo": {
+    "display": "San Angelo, Tom Green County, Texas, United States",
+    "lat": 31.4649685,
+    "lon": -100.4405094
+  },
+  "US|Texas|Sugar Land": {
+    "display": "Sugar Land, Fort Bend County, Texas, United States",
+    "lat": 29.6196787,
+    "lon": -95.6349463
+  },
+  "US|Texas|Temple": {
+    "display": "Temple, Bell County, Texas, United States",
+    "lat": 31.0983747,
+    "lon": -97.3429563
+  },
+  "US|Texas|Tyler": {
+    "display": "Tyler, Smith County, Texas, United States",
+    "lat": 32.3512601,
+    "lon": -95.3010624
+  },
+  "US|Texas|Waco": {
+    "display": "Waco, McLennan County, Texas, United States",
+    "lat": 31.5491899,
+    "lon": -97.1474628
+  },
+  "US|Texas|Wichita Falls": {
+    "display": "Wichita Falls, Wichita County, Texas, United States",
+    "lat": 33.9004572,
+    "lon": -98.5020777
+  },
+  "US|Utah|Layton": {
+    "display": "Layton, Davis County, Utah, United States",
+    "lat": 41.0751048,
+    "lon": -111.9741925
+  },
+  "US|Utah|Lehi": {
+    "display": "Lehi, Utah County, Utah, 84048, United States",
+    "lat": 40.3881114,
+    "lon": -111.8486019
+  },
+  "US|Utah|Ogden": {
+    "display": "Ogden, Weber County, Utah, United States",
+    "lat": 41.2230048,
+    "lon": -111.9738429
+  },
+  "US|Utah|Orem": {
+    "display": "Orem, Utah County, Utah, United States",
+    "lat": 40.2981599,
+    "lon": -111.6944313
+  },
+  "US|Utah|Provo": {
+    "display": "Provo, Utah County, Utah, United States",
+    "lat": 40.2337289,
+    "lon": -111.6587085
+  },
+  "US|Utah|Salt Lake City": {
+    "display": "Salt Lake City, Salt Lake County, Utah, United States",
+    "lat": 40.7596198,
+    "lon": -111.886797
+  },
+  "US|Utah|Sandy": {
+    "display": "Sandy, Salt Lake County, Utah, United States",
+    "lat": 40.5710454,
+    "lon": -111.8953815
+  },
+  "US|Utah|South Jordan": {
+    "display": "South Jordan, Salt Lake County, Utah, United States",
+    "lat": 40.5584882,
+    "lon": -111.9367107
+  },
+  "US|Utah|West Jordan": {
+    "display": "West Jordan, Salt Lake County, Utah, United States",
+    "lat": 40.6061337,
+    "lon": -111.9395211
+  },
+  "US|Utah|West Valley City": {
+    "display": "West Valley City, Salt Lake County, Utah, United States",
+    "lat": 40.6967891,
+    "lon": -111.9866954
+  },
+  "US|Virginia|Alexandria": {
+    "display": "Alexandria, Virginia, United States",
+    "lat": 38.8051095,
+    "lon": -77.0470229
+  },
+  "US|Virginia|Chesapeake": {
+    "display": "Chesapeake, Virginia, United States",
+    "lat": 36.7168315,
+    "lon": -76.2494453
+  },
+  "US|Virginia|Hampton": {
+    "display": "Hampton, Virginia, United States",
+    "lat": 37.0264414,
+    "lon": -76.3442846
+  },
+  "US|Virginia|Lynchburg": {
+    "display": "Lynchburg, Virginia, United States",
+    "lat": 37.4137536,
+    "lon": -79.1422464
+  },
+  "US|Virginia|Newport News": {
+    "display": "Newport News, Virginia, United States",
+    "lat": 36.9775016,
+    "lon": -76.42977
+  },
+  "US|Virginia|Norfolk": {
+    "display": "Norfolk, Virginia, United States",
+    "lat": 36.8493695,
+    "lon": -76.2899539
+  },
+  "US|Virginia|Portsmouth": {
+    "display": "Portsmouth, Virginia, United States",
+    "lat": 36.8320081,
+    "lon": -76.297699
+  },
+  "US|Virginia|Richmond": {
+    "display": "Richmond, Virginia, United States",
+    "lat": 37.5385087,
+    "lon": -77.43428
+  },
+  "US|Virginia|Roanoke": {
+    "display": "Roanoke, Virginia, United States",
+    "lat": 37.270973,
+    "lon": -79.9414313
+  },
+  "US|Virginia|Suffolk": {
+    "display": "Suffolk, Virginia, United States",
+    "lat": 36.7281341,
+    "lon": -76.5834683
+  },
+  "US|Washington|Auburn": {
+    "display": "Auburn, King County, Washington, United States",
+    "lat": 47.3075369,
+    "lon": -122.2301808
+  },
+  "US|Washington|Bellevue": {
+    "display": "Bellevue, King County, Washington, United States",
+    "lat": 47.6144219,
+    "lon": -122.192337
+  },
+  "US|Washington|Bellingham": {
+    "display": "Bellingham, Whatcom County, Washington, United States",
+    "lat": 48.7544012,
+    "lon": -122.478836
+  },
+  "US|Washington|Everett": {
+    "display": "Everett, Snohomish County, Washington, United States",
+    "lat": 47.9793437,
+    "lon": -122.2127011
+  },
+  "US|Washington|Federal Way": {
+    "display": "Federal Way, King County, Washington, United States",
+    "lat": 47.313494,
+    "lon": -122.33931
+  },
+  "US|Washington|Kennewick": {
+    "display": "Kennewick, Benton County, Washington, United States",
+    "lat": 46.2087066,
+    "lon": -119.119919
+  },
+  "US|Washington|Kent": {
+    "display": "Kent, King County, Washington, United States",
+    "lat": 47.3826903,
+    "lon": -122.2270272
+  },
+  "US|Washington|Kirkland": {
+    "display": "Kirkland, King County, Washington, United States",
+    "lat": 47.6765382,
+    "lon": -122.2070775
+  },
+  "US|Washington|Marysville": {
+    "display": "Marysville, Snohomish County, Washington, United States",
+    "lat": 48.0517429,
+    "lon": -122.1768209
+  },
+  "US|Washington|Pasco": {
+    "display": "Pasco, Franklin County, Washington, 99301, United States",
+    "lat": 46.2306739,
+    "lon": -119.0921
+  },
+  "US|Washington|Redmond": {
+    "display": "Redmond, King County, Washington, 98052, United States",
+    "lat": 47.6694141,
+    "lon": -122.1238767
+  },
+  "US|Washington|Renton": {
+    "display": "Renton, King County, Washington, United States",
+    "lat": 47.4799078,
+    "lon": -122.2034496
+  },
+  "US|Washington|Spokane": {
+    "display": "Spokane, Spokane County, Washington, United States",
+    "lat": 47.6571934,
+    "lon": -117.42351
+  },
+  "US|Washington|Spokane Valley": {
+    "display": "Spokane Valley, Spokane County, Washington, United States",
+    "lat": 47.6571104,
+    "lon": -117.2613936
+  },
+  "US|Washington|Tacoma": {
+    "display": "Tacoma, Pierce County, Washington, United States",
+    "lat": 47.2455013,
+    "lon": -122.438329
+  },
+  "US|Washington|Vancouver": {
+    "display": "Vancouver, Clark County, Washington, United States",
+    "lat": 45.6306954,
+    "lon": -122.6744557
+  },
+  "US|Washington|Yakima": {
+    "display": "Yakima, Yakima County, Washington, United States",
+    "lat": 46.601557,
+    "lon": -120.510842
+  },
+  "US|Wisconsin|Appleton": {
+    "display": "Appleton, Outagamie County, Wisconsin, United States",
+    "lat": 44.2613967,
+    "lon": -88.4069744
+  },
+  "US|Wisconsin|Green Bay": {
+    "display": "Green Bay, Brown County, Wisconsin, United States",
+    "lat": 44.5126379,
+    "lon": -88.0125794
+  },
+  "US|Wisconsin|Kenosha": {
+    "display": "Kenosha, Kenosha County, Wisconsin, United States",
+    "lat": 42.5846773,
+    "lon": -87.8212263
+  },
+  "US|Wisconsin|Madison": {
+    "display": "Madison, Dane County, Wisconsin, United States",
+    "lat": 43.07469,
+    "lon": -89.3841663
+  },
+  "US|Wisconsin|Racine": {
+    "display": "Racine, Racine County, Wisconsin, United States",
+    "lat": 42.7313756,
+    "lon": -87.7834769
+  }
+}
