@@ -6,32 +6,75 @@ Master of Data Analytics co-op project; intended for non-technical
 stakeholders who want to explore the data the way they'd explore a Power BI
 report — clicking filters, hovering on a map — without writing code.
 
-## What it shows
+## App layout
 
-- **Country toggle** (Both / Canada / US, default Both)
-- **Sidebar filters**: tier, state/province, fiscal year, population range,
-  capex per capita range (unit auto-switches between USD-equivalent and local
-  currency depending on country selection)
-- **KPI cards**: # municipalities, total capex (USD), population-weighted avg
-  capex per capita (USD), and per-tier counts in the project's tier colors
-- **Interactive bubble map** (pydeck): one bubble per city, sized by capex
-  (toggle between total and per-capita), colored by tier, with a hover
-  tooltip showing all key fields
-- **Comparison view**: pick up to 3 municipalities and see them side by side;
-  warns when the selected munis span different countries / fiscal years /
-  scoring methods
-- **Drill-down table** with a "show all columns" toggle and CSV export
+The app is a **Streamlit multipage app with three pages**, deliberately
+split because the underlying datasets are not directly comparable (see
+"Why two pages?" below).
+
+1. **Overview & Methodology** (landing, `app.py`) — no dashboard. Shows
+   the cohort counts (Canada 62 / US 419 / Total 481), how to use the
+   app, the methodology asymmetry between the two datasets, and tier
+   definitions. Read this first.
+2. **Canada** (`pages/1_Canada.py`) — Canada-only dashboard. CAD throughout.
+   Tier filter limited to the tiers present in the Canadian data
+   (Leaders, Visionaries). Province filter, fiscal-year filter (FY2025/26),
+   population and capex-per-capita range sliders. Map, KPI cards,
+   **Distributions & rankings** section (Top/Bottom rankings, capex-per-capita
+   histogram with comparison-view overlays, province pop-weighted averages,
+   and a Canada-only tier scatter of capex score vs vision score with
+   quadrant shading), comparison view (with vision-score and governance
+   fields), drill-down table, CSV export to `municipal_capex_canada.csv`.
+3. **United States** (`pages/2_United_States.py`) — US-only dashboard.
+   USD throughout. All four tiers in the filter. State filter, no
+   fiscal-year filter (only FY2022 — surfaced in a caption). Population
+   and capex-per-capita range sliders. Map, KPI cards, **Distributions &
+   rankings** section (Top/Bottom rankings, capex-per-capita histogram
+   with comparison-view overlays, state pop-weighted averages — no tier
+   scatter on this page since US data has no vision score), comparison
+   view (no vision-score, governance, FX rate, or classification rows —
+   they are uninformative for US data), drill-down table, CSV export to
+   `municipal_capex_us.csv`.
+
+Each country page has independent session state (filter keys are
+prefixed `ca_*` and `us_*`), so switching pages does not bleed filter
+state from one country into the other.
 
 ## Files
 
 | File | Purpose |
 |---|---|
-| `app.py` | Streamlit UI |
+| `app.py` | Overview & methodology landing page (no widgets) |
+| `pages/1_Canada.py` | Canada-only dashboard |
+| `pages/2_United_States.py` | US-only dashboard |
+| `theme.py` | Tier ordering, colors (hex + RGB), per-country tier sets, state/province abbreviations |
 | `data_loader.py` | Loads the `Combined` sheet of the workbook (cached) |
 | `geocoding.py` | Nominatim geocoder + JSON cache |
 | `geocode_cache.json` | Pre-computed coordinates for every municipality |
 | `P1_Municipal_CapEx_Combined.xlsx` | Source workbook |
 | `requirements.txt` | Pinned Python dependencies |
+
+## Why two pages?
+
+Earlier versions had a single dashboard with a `Both / Canada / US`
+toggle. That was misleading: it put two structurally different datasets
+in the same view and invited cross-country comparisons that the data
+does not support. The split removes the structural problem instead of
+papering over it with callouts.
+
+| Dimension | US (419 cities) | Canada (62 cities) |
+|---|---|---|
+| Source | US Census Bureau Annual Survey FY2022 | Municipal open-data portals, FY2025/26 |
+| Capex coverage | Construction CapEx only | Total CapEx |
+| Scoring | Single-axis (capex per capita) | Two-axis (capex + strategic-vision score) |
+| Vision score | Not collected | 0–6 raw, 0–4 normalized |
+| Currency | USD | CAD |
+
+A "Visionary" in the US (high per-capita construction capex) and a
+"Visionary" in Canada (above-median total capex *and* above-median
+strategic-vision score) do not mean the same thing, even though they
+share a label. Putting both on one page hid this; putting them on two
+pages makes the asymmetry obvious.
 
 ## Running locally
 
@@ -58,57 +101,48 @@ after every lookup, so it is safe to interrupt and resume.
 
 ## Deployment
 
-Two reasonable options for this kind of single-page Streamlit app:
+Two reasonable options:
 
-- **Local / on-prem**: just run `streamlit run app.py` on any machine that
-  can reach the workbook. No external services are required at runtime —
-  the geocode cache is read from disk.
+- **Local / on-prem**: run `streamlit run app.py` on any machine that can
+  reach the workbook. No external services are required at runtime — the
+  geocode cache is read from disk.
 - **Streamlit Community Cloud** (free for public repos): push this folder
-  to a GitHub repo and connect it from <https://share.streamlit.io>. Set the
-  main file to `app.py` and the Python version to 3.11. The committed
-  `geocode_cache.json` means the deployed app never needs to call Nominatim,
-  which is important because Streamlit Cloud's outbound network and
-  Nominatim's rate limits don't mix well.
+  to a GitHub repo and connect it from <https://share.streamlit.io>. Set
+  the main file to `app.py` and the Python version to 3.11. Streamlit
+  auto-discovers files under `pages/`, so all three pages will be
+  navigable. The committed `geocode_cache.json` means the deployed app
+  never needs to call Nominatim, which matters because Streamlit Cloud's
+  outbound network and Nominatim's rate limits do not mix well.
 
 No database, no auth, no secrets.
 
-## Methodology — important asymmetry between US and Canada
+## Honest-data behaviors built into the pages
 
-This dashboard combines two datasets that were collected and scored
-**differently**. Surface this honestly to anyone reading the dashboard;
-it's also the first thing the dashboard itself says in its methodology
-expander.
-
-| Dimension | US (419 cities) | Canada (62 cities) |
-|---|---|---|
-| Source | US Census Bureau Annual Survey FY2022 | Municipal open-data portals, FY2025/26 |
-| Capex coverage | Construction CapEx only | Total CapEx |
-| Scoring | Single-axis (capex per capita) | Two-axis (capex + strategic-vision score) |
-| Vision score | Not collected | 0–6 raw, 0–4 normalized |
-
-Implications:
-
-- A "Visionary" in the US (high per-capita capex) and a "Visionary" in
-  Canada (above-median capex *and* above-median vision score) do not mean
-  the same thing.
-- The US tier mix is heavy on "Niche Players" and includes "Challengers";
-  Canada has neither. This is a **methodology artifact**, not a real-world
-  finding.
-- Total-dollar comparisons understate US capex relative to Canadian capex
-  because the US figures are construction-only and three years older.
-
-The dashboard handles this by:
-- Showing a methodology callout at the top, expanded by default.
-- Defaulting cross-country views to USD-equivalent and labeling units
-  explicitly everywhere.
-- Rendering "N/A" for fields like `vision_score_norm` on US rows rather
-  than fabricating a value.
-- Warning in the comparison view when selected cities span different
-  countries, fiscal years, or scoring methods.
+- Currency unit (`USD` or `CAD`) is always printed next to a capex
+  number — there is never a raw figure without its unit.
+- The Canada page only lists tiers actually present in Canadian data
+  (Leaders, Visionaries). The US page lists all four.
+- The US comparison view does not show vision-score / governance / FX /
+  classification rows, since none of those fields are populated for US
+  municipalities. They are simply absent rather than rendered as "N/A".
+- The Canada comparison view warns when selected cities span FY2025 and
+  FY2026.
+- The Overview page is the single place that talks about cross-country
+  asymmetry; the country pages do not duplicate or invite that
+  comparison.
+- State/province average bars are **population-weighted**
+  (`sum(capex_local) / sum(population)`), not simple means. Single-city
+  groups are flagged with `*` and a caption clarifying they reflect one
+  city, not a regional average.
+- The histogram on each country page reads the comparison-view selection
+  from session state and overlays vertical lines for selected cities;
+  picking cities in the comparison view highlights them on the
+  histogram automatically.
 
 ## Known issues
 
-- **Greater Sudbury / Grand Sudbury** (Ontario) currently fails Nominatim
-  geocoding because of the slash in the official name. It will not appear
-  on the map until a manual override coordinate is added to
-  `geocode_cache.json`. All other 480 municipalities are mapped.
+- **Greater Sudbury / Grand Sudbury** (Ontario) failed automatic
+  Nominatim geocoding because of the slash in the official name. A
+  manual override coordinate has been added to `geocode_cache.json`, so
+  the city now appears on the Canada map. If you ever rebuild the cache
+  with `python geocoding.py`, re-apply the override.
