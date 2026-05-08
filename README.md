@@ -139,10 +139,10 @@ No database, no auth, no secrets.
   picking cities in the comparison view highlights them on the
   histogram automatically.
 
-## Known issues
+## Geocoding overrides
 
-- **Greater Sudbury / Grand Sudbury** (Ontario) failed automatic
-  Nominatim geocoding because of the slash in the official name. A
-  manual override coordinate has been added to `geocode_cache.json`, so
-  the city now appears on the Canada map. If you ever rebuild the cache
-  with `python geocoding.py`, re-apply the override.
+A few municipalities cannot be resolved by Nominatim (e.g. names with
+slashes like **Greater Sudbury / Grand Sudbury**, Ontario). Coordinates
+for these are hardcoded in `MANUAL_OVERRIDES` at the top of
+`geocoding.py` and re-seeded into the cache on every rebuild, so
+`python geocoding.py` is safe to re-run without losing them.

@@ -25,6 +25,16 @@ CACHE_PATH = Path(__file__).parent / "geocode_cache.json"
 USER_AGENT = "municipal-capex-dashboard (academic project)"
 NOMINATIM_DELAY_SECONDS = 1.1
 
+# Manual overrides for keys Nominatim cannot resolve (e.g. names with
+# slashes). Re-applied on every cache build so rebuilds never lose them.
+MANUAL_OVERRIDES: dict[str, "Coord"] = {
+    "Canada|Ontario|Greater Sudbury / Grand Sudbury": {
+        "lat": 46.4917,
+        "lon": -80.993,
+        "display": "Greater Sudbury, Ontario, Canada (manual override)",
+    },
+}
+
 
 class Coord(TypedDict):
     lat: float
@@ -84,6 +94,7 @@ def build_cache(df: pd.DataFrame, *, force: bool = False) -> dict[str, Coord | N
     discard prior progress. Already-cached keys are skipped unless force=True.
     """
     cache = {} if force else _load_cache()
+    cache.update(MANUAL_OVERRIDES)
     rows = df[["country", "state_province", "municipality"]].drop_duplicates()
     total = len(rows)
     new_lookups = 0
