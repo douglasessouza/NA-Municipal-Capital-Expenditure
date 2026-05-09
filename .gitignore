@@ -83,3 +83,9 @@ logs/
 # *.csv
 # *.parquet
 # data/
+
+# SQLite (local-only View Builder DB)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
