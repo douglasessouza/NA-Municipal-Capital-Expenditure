@@ -131,6 +131,7 @@ with control_col:
     sort_dir: str = "asc"
     group_by: list[str] | None = None
     measures: list[str] | None = None
+    hover_cols: list[str] | None = None
 
     if chart_type == "table":
         saved_group_by = (loaded_config or {}).get("group_by") or []
@@ -223,6 +224,20 @@ with control_col:
         )
         color_col = None if color_pick == NONE_LABEL else color_pick
 
+        # X / Y / Color are already in the default Plotly tooltip; offer the
+        # rest as opt-in extras.
+        already_shown = {x_col, y_col, color_col}
+        hover_options = [c for c in all_cols if c not in already_shown]
+        saved_hover = (loaded_config or {}).get("hover_cols") or []
+        hover_default = [c for c in saved_hover if c in hover_options]
+        hover_cols = st.multiselect(
+            "Add to hover tooltip",
+            options=hover_options,
+            default=hover_default,
+            key=f"{ns}_hover",
+            help="Extra columns to show when hovering a data point.",
+        )
+
     df_for_filters = read_data()
     saved_filters: dict[str, Any] = (loaded_config or {}).get("filters", {})
     filters: dict[str, Any] = {}
@@ -281,6 +296,7 @@ config: dict[str, Any] = {
     "y": y_col,
     "aggregation": aggregation,
     "color": color_col,
+    "hover_cols": hover_cols,
     "columns": selected_columns,
     "group_by": group_by,
     "measures": measures,
@@ -371,6 +387,10 @@ with preview_col:
         kwargs: dict[str, Any] = {"x": x_col, "y": y_col}
         if color_col:
             kwargs["color"] = color_col
+        # Only pass hover columns that survived the (possible) groupby.
+        extra_hover = [c for c in (hover_cols or []) if c in plot_df.columns]
+        if extra_hover:
+            kwargs["hover_data"] = extra_hover
 
         if chart_type == "bar":
             fig = px.bar(plot_df, **kwargs)
