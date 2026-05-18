@@ -19,9 +19,9 @@ from __future__ import annotations
 from typing import Any
 
 import pandas as pd
-import plotly.express as px
 import streamlit as st
 
+from chart_renderer import apply_filters, render_chart
 from db import (
     data_table_exists,
     delete_view,
@@ -38,7 +38,7 @@ CHART_TYPES: tuple[str, ...] = ("bar", "line", "scatter", "table")
 AGGREGATIONS: tuple[str, ...] = ("none", "sum", "mean", "count", "min", "max")
 TABLE_AGGREGATIONS: tuple[str, ...] = ("sum", "mean", "count", "min", "max")
 NONE_LABEL = "(none)"
-ROW_COUNT_COL = "row_count"
+ROW_COUNT_COL = "row_count"  # kept for the table sort_options reference below
 
 st.set_page_config(layout="wide", page_title="View Builder")
 st.title("View Builder")
@@ -306,101 +306,9 @@ config: dict[str, Any] = {
 }
 
 
-def _apply_filters(base: pd.DataFrame, fs: dict[str, Any]) -> pd.DataFrame:
-    out = base
-    for col, val in fs.items():
-        if (
-            isinstance(val, list)
-            and len(val) == 2
-            and all(isinstance(v, (int, float)) for v in val)
-        ):
-            num = pd.to_numeric(out[col], errors="coerce")
-            out = out[(num >= val[0]) & (num <= val[1])]
-        elif isinstance(val, list):
-            out = out[out[col].astype(str).isin([str(v) for v in val])]
-    return out
-
-
 with preview_col:
     st.subheader("Preview")
-    df = _apply_filters(read_data(), filters)
-    st.caption(f"{len(df):,} rows after filters.")
-
-    if df.empty:
-        st.info("No rows match the current filters.")
-    elif chart_type == "table":
-        if group_by:
-            valid_groups = [c for c in group_by if c in df.columns]
-            valid_measures = [c for c in (measures or []) if c in df.columns]
-            if valid_measures:
-                # Coerce measure cols to numeric so SQLite TEXT round-trips
-                # don't poison the aggregation.
-                agg_df = df.copy()
-                for m in valid_measures:
-                    agg_df[m] = pd.to_numeric(agg_df[m], errors="coerce")
-                table_df = (
-                    agg_df.groupby(valid_groups, dropna=False)
-                    .agg({m: aggregation for m in valid_measures})
-                    .reset_index()
-                )
-            else:
-                table_df = (
-                    df.groupby(valid_groups, dropna=False)
-                    .size()
-                    .reset_index(name=ROW_COUNT_COL)
-                )
-        else:
-            cols_to_show = [
-                c for c in (selected_columns or list(df.columns)) if c in df.columns
-            ]
-            table_df = df[cols_to_show] if cols_to_show else df
-
-        if sort_by and sort_by in table_df.columns:
-            table_df = table_df.sort_values(
-                by=sort_by,
-                ascending=(sort_dir == "asc"),
-                na_position="last",
-            )
-        st.dataframe(table_df, use_container_width=True, height=540, hide_index=True)
-    elif y_col is None:
-        st.info("Pick a Y axis column to render this chart type.")
-    else:
-        plot_df = df.copy()
-        if aggregation != "none":
-            # Dedupe so picking the same column for X and Color (or X == Y)
-            # doesn't blow up reset_index with duplicate column names.
-            group_cols: list[str] = [x_col]
-            if color_col and color_col != x_col:
-                group_cols.append(color_col)
-            if y_col in group_cols:
-                st.warning(
-                    "Y axis can't be the same column as X or Color when "
-                    "aggregating. Pick a different Y or set aggregation to 'none'."
-                )
-                st.stop()
-            plot_df = (
-                plot_df.groupby(group_cols, dropna=False)
-                .agg({y_col: aggregation})
-                .reset_index()
-            )
-
-        kwargs: dict[str, Any] = {"x": x_col, "y": y_col}
-        if color_col:
-            kwargs["color"] = color_col
-        # Only pass hover columns that survived the (possible) groupby.
-        extra_hover = [c for c in (hover_cols or []) if c in plot_df.columns]
-        if extra_hover:
-            kwargs["hover_data"] = extra_hover
-
-        if chart_type == "bar":
-            fig = px.bar(plot_df, **kwargs)
-        elif chart_type == "line":
-            fig = px.line(plot_df, **kwargs)
-        else:  # scatter
-            fig = px.scatter(plot_df, **kwargs)
-
-        fig.update_layout(margin=dict(l=10, r=10, t=10, b=10), height=540)
-        st.plotly_chart(fig, use_container_width=True)
+    render_chart(config, read_data())
 
 st.divider()
 
